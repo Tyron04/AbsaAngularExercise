@@ -1,0 +1,16 @@
+C:\Projects\AbsaAngularExercise\src\server\AbsaExerciseServer\Server.Repository\bin\Debug\Server.Repository.dll
+C:\Projects\AbsaAngularExercise\src\server\AbsaExerciseServer\Server.Repository\bin\Debug\Server.Repository.pdb
+C:\Projects\AbsaAngularExercise\src\server\AbsaExerciseServer\Server.Repository\bin\Debug\Server.Domain.dll
+C:\Projects\AbsaAngularExercise\src\server\AbsaExerciseServer\Server.Repository\bin\Debug\Server.Domain.pdb
+C:\Projects\AbsaAngularExercise\src\server\AbsaExerciseServer\Server.Repository\obj\Debug\Server.Repository.csprojResolveAssemblyReference.cache
+C:\Projects\AbsaAngularExercise\src\server\AbsaExerciseServer\Server.Repository\obj\Debug\Server.Repository.dll
+C:\Projects\AbsaAngularExercise\src\server\AbsaExerciseServer\Server.Repository\obj\Debug\Server.Repository.pdb
+C:\Projects\AbsaAngularExercise\src\server\AbsaExerciseServer\Server.Repository\bin\Debug\MongoDB.Bson.dll
+C:\Projects\AbsaAngularExercise\src\server\AbsaExerciseServer\Server.Repository\bin\Debug\MongoDB.Driver.Core.dll
+C:\Projects\AbsaAngularExercise\src\server\AbsaExerciseServer\Server.Repository\bin\Debug\MongoDB.Driver.dll
+C:\Projects\AbsaAngularExercise\src\server\AbsaExerciseServer\Server.Repository\bin\Debug\MongoDB.Driver.Legacy.dll
+C:\Projects\AbsaAngularExercise\src\server\AbsaExerciseServer\Server.Repository\bin\Debug\System.Runtime.InteropServices.RuntimeInformation.dll
+C:\Projects\AbsaAngularExercise\src\server\AbsaExerciseServer\Server.Repository\bin\Debug\MongoDB.Bson.xml
+C:\Projects\AbsaAngularExercise\src\server\AbsaExerciseServer\Server.Repository\bin\Debug\MongoDB.Driver.xml
+C:\Projects\AbsaAngularExercise\src\server\AbsaExerciseServer\Server.Repository\bin\Debug\MongoDB.Driver.Core.xml
+C:\Projects\AbsaAngularExercise\src\server\AbsaExerciseServer\Server.Repository\bin\Debug\MongoDB.Driver.Legacy.xml

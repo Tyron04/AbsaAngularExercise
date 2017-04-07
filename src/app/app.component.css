@@ -1,0 +1,12 @@
+.mainTitle{
+    text-align:center;  
+    }
+
+    a {
+  cursor: pointer;
+  cursor: hand;
+}
+
+.navbar-brand{
+    color: white;
+}
