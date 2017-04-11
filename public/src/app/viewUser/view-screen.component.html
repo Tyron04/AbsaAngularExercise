@@ -1,0 +1,35 @@
+<div class="viewScreen panel panel-default">
+    <div class="panel-heading">
+        <h2 class="text-center">View Users</h2>
+    </div>
+
+    <div class="panel-body">
+        <div class="table-responsive">
+
+            <table class="table table-striped table-hover">
+                <thead>
+                    <tr>
+                        <th>Id</th>
+                        <th>Name</th>
+                        <th>Surname</th>
+                        <th>Country</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr *ngFor="let user of users">
+                        <td>{{user.Id}}</td>
+                        <td>{{user.Name}}</td>
+                        <td>{{user.Surname}}</td>
+                        <td>{{user.Country}}</td>
+                        <td>
+                            <a onclick="blockUI()" class="actionButton" [routerLink]="['/edit', user.Id]"><span class="glyphicon glyphicon-pencil"></span></a>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            
+        </div>
+    </div>
+
+</div>
