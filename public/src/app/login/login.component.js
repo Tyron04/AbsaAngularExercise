@@ -24,7 +24,6 @@ var LoginComponent = (function () {
         });
     }
     LoginComponent.prototype.login = function () {
-        console.log("login called");
         this.loginService.login(this.loginForm.value);
     };
     ;

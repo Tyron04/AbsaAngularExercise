@@ -20,6 +20,7 @@ namespace AbsaExerciseServer.Controllers
         }
 
         [HttpPost]
+        [Route("Login")]
         public IHttpActionResult Login()
         {
             if (Request.Headers.Authorization != null && Request.Headers.Authorization.Scheme == "Basic" && !string.IsNullOrEmpty(Request.Headers.Authorization.Parameter))
@@ -46,6 +47,14 @@ namespace AbsaExerciseServer.Controllers
                 }
             }
             return Unauthorized();
+        }
+
+        [HttpPost]
+        [Route("Create")]
+        public IHttpActionResult Create()
+        {
+            _loginRepository.CreateLogin("Admin", "Admin");
+            return Ok();
         }
 
     }

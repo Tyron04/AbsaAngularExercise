@@ -4,12 +4,12 @@ import { User } from '../models/user/user';
 import { Router } from '@angular/router';
 import { UserService } from '../services/user/user.service';
 import { FormBuilder, Validators } from '@angular/forms';
-import {Country} from '../models/country/country';
+import { Country } from '../models/country/country';
 
 @Component({
     selector: 'create-user',
     templateUrl: './create-screen.component.html',
-    styleUrls:['./create-screen.component.css']
+    styleUrls: ['./create-screen.component.css']
 })
 
 export class CreateScreenComponent implements OnInit {
@@ -32,19 +32,21 @@ export class CreateScreenComponent implements OnInit {
     };
 
     create(): void {
-         this.userService.create(this.createForm.value as User)
-         .subscribe(() => {
-             this.router.navigate(['/users']);
-        });
+        this.userService.create(this.createForm.value as User)
+            .subscribe(() => {
+                this.router.navigate(['/users']);
+            },
+            error => console.log(error));
     };
 
     getCountries(): void {
         this.countryService.getCountries()
-            .subscribe(countries => this.countries = countries);
+            .subscribe(countries => this.countries = countries,
+            error => console.log(error));
     };
 
     cancel(): void {
-          this.router.navigate(['/users']);
+        this.router.navigate(['/users']);
     };
 
 }

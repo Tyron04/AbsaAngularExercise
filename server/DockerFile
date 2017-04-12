@@ -4,11 +4,12 @@ SHELL ["powershell"]
 RUN Install-WindowsFeature NET-Framework-45-ASPNET ; \  
     Install-WindowsFeature Web-Asp-Net45
 
-RUN mkdir c:\AbsaExerciseServer
-COPY Release c:\AbsaExerciseServer  
+RUN mkdir -p /AbsaExerciseServer
+COPY /AbsaExerciseServer/AbsaExerciseServer /AbsaExerciseServer  
 RUN Remove-WebSite -Name 'Default Web Site'  
-RUN New-Website -Name 'absaServer' -Port 57022 \  
+RUN New-Website -Name 'absaServer' -Port 57023 \  
     -PhysicalPath 'c:\AbsaExerciseServer' -ApplicationPool '.NET v4.5'
-EXPOSE 57022
+
+EXPOSE 57023
 
 CMD ["ping", "-t", "localhost"] 

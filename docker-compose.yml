@@ -1,16 +1,22 @@
 version: '2'
 services:
   angular: 
+    container_name: angularApp
     build: public
     ports:
       - "3000:3000" 
 
-  server: 
-    build: server
-    ports:
-      - "57022:57022" 
-
   database:
+    container_name: mongodb
     image: mongo
     ports:
       - "27017:27017" 
+      
+  server: 
+    container_name: webServer
+    build: server
+    ports:
+      - "57022:57022" 
+    links: 
+     - database
+

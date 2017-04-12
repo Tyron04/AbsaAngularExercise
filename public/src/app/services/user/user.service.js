@@ -17,28 +17,28 @@ var UserService = (function () {
     function UserService(http) {
         this.http = http;
         this.usersUrl = server_config_1.serverConfig.protocol + "://" + server_config_1.serverConfig.hostname + ":" + server_config_1.serverConfig.port + "/api/users";
-        this.headers = new http_1.Headers({ 'Content-Type': 'application/json' });
+        this.headers = new http_1.Headers({ "Authorization": "Bearer " + localStorage.getItem('id_token') });
     }
     UserService.prototype.getUsers = function () {
         console.log(this.usersUrl);
-        return this.http.get(this.usersUrl)
+        return this.http.get(this.usersUrl, { headers: this.headers })
             .map(function (response) { return response.json(); });
     };
     ;
     UserService.prototype.getUser = function (id) {
         var url = this.usersUrl + "/" + id;
-        return this.http.get(url)
+        return this.http.get(url, { headers: this.headers })
             .map(function (response) { return response.json(); });
     };
     ;
     UserService.prototype.create = function (user) {
-        return this.http.post(this.usersUrl, user)
+        return this.http.post(this.usersUrl, user, { headers: this.headers })
             .map(function (response) { return response.json(); });
     };
     ;
     UserService.prototype.update = function (user) {
         var url = this.usersUrl + "/" + user.Id;
-        return this.http.put(url, user)
+        return this.http.put(url, user, { headers: this.headers })
             .map(function (response) { return response.json(); });
     };
     ;

@@ -23,7 +23,6 @@ export class LoginComponent {
     })
 
     login(): void {
-        console.log("login called");
         this.loginService.login(this.loginForm.value as LoginDetails);
     };
 

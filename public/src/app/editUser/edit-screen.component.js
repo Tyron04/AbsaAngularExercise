@@ -39,13 +39,13 @@ var EditScreenComponent = (function () {
                 surname: _this.user.Surname,
                 country: _this.user.Country
             });
-        });
+        }, function (error) { return console.log(error); });
     };
     ;
     EditScreenComponent.prototype.getCountries = function () {
         var _this = this;
         this.countryService.getCountries()
-            .subscribe(function (countries) { return _this.countries = countries; });
+            .subscribe(function (countries) { return _this.countries = countries; }, function (error) { return console.log(error); });
     };
     EditScreenComponent.prototype.update = function () {
         var _this = this;
@@ -54,7 +54,7 @@ var EditScreenComponent = (function () {
         this.userService.update(updatedUser)
             .subscribe(function () {
             _this.router.navigate(['/users']);
-        });
+        }, function (error) { return console.log(error); });
     };
     ;
     EditScreenComponent.prototype.cancel = function () {

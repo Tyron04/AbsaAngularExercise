@@ -35,13 +35,13 @@ var CreateScreenComponent = (function () {
         this.userService.create(this.createForm.value)
             .subscribe(function () {
             _this.router.navigate(['/users']);
-        });
+        }, function (error) { return console.log(error); });
     };
     ;
     CreateScreenComponent.prototype.getCountries = function () {
         var _this = this;
         this.countryService.getCountries()
-            .subscribe(function (countries) { return _this.countries = countries; });
+            .subscribe(function (countries) { return _this.countries = countries; }, function (error) { return console.log(error); });
     };
     ;
     CreateScreenComponent.prototype.cancel = function () {

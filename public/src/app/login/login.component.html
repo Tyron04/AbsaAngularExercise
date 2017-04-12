@@ -3,7 +3,7 @@
 </nav>
 
 <form class="loginForm" [formGroup]="loginForm" (submit)="login()">
-    <div class="panel panel-default">
+    <div class="panel panel-primary">
         <div class="panel-heading">
             <h2>Login</h2>
         </div>
@@ -20,7 +20,7 @@
             </div>
         </div>
         <div class="panel-footer">
-            <button class="btn btn-default" type="submit" [disabled]="!loginForm.valid">Login</button>
+            <button class="btn btn-primary" type="submit" [disabled]="!loginForm.valid">Login</button>
         </div>
     </div>
 </form>

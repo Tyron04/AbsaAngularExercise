@@ -30,7 +30,7 @@ __decorate([
 FunButtonComponent = __decorate([
     core_1.Component({
         selector: "fun-button",
-        template: "<button (click)=\"onClick()\">{{displayValue}}</button>"
+        template: "<button class=\"btn btn-primary\" (click)=\"onClick()\">{{displayValue}}</button>"
     })
 ], FunButtonComponent);
 exports.FunButtonComponent = FunButtonComponent;
