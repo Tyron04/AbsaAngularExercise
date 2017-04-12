@@ -1,15 +1,30 @@
 # AbsaAngularExercise
 
-The Front-End was created using Angular 2 and styled using Bootstrap
+# About and Installation
+
+## Front-End
+
+The Front-End was created using Angular 2 and styled using Bootstrap.
+
+### Instructions
+
     - The front end is dockerized and can be built using "docker build -t absa-angular ." while in the "/public" folder
     - Use "docker run -d --name absa-angular -p 3000:3000 absa-angular" to run the container
     - You can now browse to "http://localhost:3000" to view the site
 
+## Database
+
 The Database is Mongo DB
+
+### Instructions
+
     - The database is dockerized and can be run using "docker run -d --name mongodb -p 27017:27017 mongo"
 
-
+## Server
 The Server was created using .Net WebApi and requires IIS to run
+
+### Instructions
+
     - The server is dockerized and can be built using "docker build -t absa-server ." while in the "/server" folder
     - Use "docker run --name server -d -p 57022:57022 absa-server" to run the container
     - User "docker inspect -f "{{ .NetworkSettings.Networks.nat.IPAddress }}" absa-server" to get the public IP
