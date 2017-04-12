@@ -10,18 +10,18 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 };
 var http_1 = require("@angular/http");
 var core_1 = require("@angular/core");
-var angular2_jwt_1 = require("angular2-jwt");
 var server_config_1 = require("../../config/server.config");
 require("rxjs/add/operator/map");
 require("rxjs/add/operator/toPromise");
 var CountryService = (function () {
-    function CountryService(authHttp) {
-        this.authHttp = authHttp;
+    function CountryService(http) {
+        this.http = http;
         this.countriesUrl = server_config_1.serverConfig.protocol + "://" + server_config_1.serverConfig.hostname + ":" + server_config_1.serverConfig.port + "/api/countries";
-        this.headers = new http_1.Headers({ 'Content-Type': 'application/json' });
     }
     CountryService.prototype.getCountries = function () {
-        return this.authHttp.get(this.countriesUrl)
+        var headers = new http_1.Headers({ 'Content-Type': 'application/json' });
+        headers.append("Authorization", "Bearer " + localStorage.getItem('id_token'));
+        return this.http.get(this.countriesUrl, { headers: headers })
             .map(function (response) { return response.json(); });
     };
     ;
@@ -33,7 +33,7 @@ var CountryService = (function () {
 }());
 CountryService = __decorate([
     core_1.Injectable(),
-    __metadata("design:paramtypes", [angular2_jwt_1.AuthHttp])
+    __metadata("design:paramtypes", [http_1.Http])
 ], CountryService);
 exports.CountryService = CountryService;
 //# sourceMappingURL=country.service.js.map

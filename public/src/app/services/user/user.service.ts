@@ -14,27 +14,28 @@ export class UserService {
     private usersUrl = `${serverConfig.protocol}://${serverConfig.hostname}:${serverConfig.port}/api/users`;
     private headers = new Headers({ 'Content-Type': 'application/json' });
 
-    constructor(private authHttp: AuthHttp) { }
+    constructor(private http: Http) { }
 
     getUsers(): Observable<User[]> {
-        return this.authHttp.get(this.usersUrl)
+        console.log(this.usersUrl);
+        return this.http.get(this.usersUrl)
             .map(response => response.json() as User[]);
     };
 
     getUser(id: number): Observable<User> {
         var url = `${this.usersUrl}/${id}`;
-        return this.authHttp.get(url)
+        return this.http.get(url)
             .map(response => response.json() as User);
     };
 
     create(user: User): Observable<User> {
-        return this.authHttp.post(this.usersUrl, user)
+        return this.http.post(this.usersUrl, user)
             .map(response => response.json() as User);
     };
 
     update(user: User): Observable<User> {
         var url = `${this.usersUrl}/${user.Id}`;
-        return this.authHttp.put(url, user)
+        return this.http.put(url, user)
             .map(response => response.json() as User);
     };
 

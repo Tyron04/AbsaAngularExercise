@@ -1,4 +1,5 @@
-﻿using Server.Domain;
+﻿using AbsaExerciseServer.Filters;
+using Server.Domain;
 using Server.Repository;
 using System;
 using System.Collections.Generic;
@@ -9,47 +10,48 @@ using System.Web.Http;
 
 namespace AbsaExerciseServer.Controllers
 {
-  [RoutePrefix("api/Users")]
-  public class UsersController : ApiController
-  {
-
-    private IUserRepository _userRepository;
-    public UsersController()
+    [RoutePrefix("api/Users")]
+    [AuthorizationFilter]
+    public class UsersController : ApiController
     {
-      _userRepository = new UserRepository();
-    }
 
-    [HttpGet]
-    public IEnumerable<User> Get()
-    {
-      return _userRepository.GetUsers();
-    }
+        private IUserRepository _userRepository;
+        public UsersController()
+        {
+            _userRepository = new UserRepository();
+        }
 
-    [HttpGet]
-    [Route("{id}")]
-    public User Get(int id)
-    {
-      return _userRepository.GetUser(id);
-    }
+        [HttpGet]
+        public IEnumerable<User> Get()
+        {
+            return _userRepository.GetUsers();
+        }
 
-    [HttpPost]
-    public User Post(User user)
-    {
-      return _userRepository.InsertUser(user);
-    }
+        [HttpGet]
+        [Route("{id}")]
+        public User Get(int id)
+        {
+            return _userRepository.GetUser(id);
+        }
 
-    [HttpPut]
-    [Route("{id}")]
-    public User Put(int id, User user)
-    {
-      return _userRepository.UpdateUser(id, user);
-    }
+        [HttpPost]
+        public User Post(User user)
+        {
+            return _userRepository.InsertUser(user);
+        }
 
-    [HttpDelete]
-    [Route("{id}")]
-    public void Delete(int id)
-    {
-      _userRepository.DeleteUser(id);
+        [HttpPut]
+        [Route("{id}")]
+        public User Put(int id, User user)
+        {
+            return _userRepository.UpdateUser(id, user);
+        }
+
+        [HttpDelete]
+        [Route("{id}")]
+        public void Delete(int id)
+        {
+            _userRepository.DeleteUser(id);
+        }
     }
-  }
 }

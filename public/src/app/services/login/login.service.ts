@@ -3,75 +3,75 @@ import { LoginDetails } from '../../models/loginDetails/login-details';
 import { Router, NavigationStart } from '@angular/router';
 import { tokenNotExpired } from 'angular2-jwt';
 import { myConfig } from '../../config/auth.config';
-
-declare var Auth0Lock: any;
-declare var auth0: any;
+import { serverConfig } from '../../config/server.config';
+import { Http, Headers } from '@angular/http';
+import { Observable } from 'rxjs';
 
 @Injectable()
 export class LoginService {
-    redirectUri = 'http://localhost:3000/create';
-    auth0 = new auth0.WebAuth({
-        domain: myConfig.domain,
-        clientID: myConfig.clientID,
-        redirectUri: this.redirectUri,
-        responseType: 'token id_token'
-    });
-
-    constructor(private router: Router) {
+    private authUrl = `${serverConfig.protocol}://${serverConfig.hostname}:${serverConfig.port}/api/auth`;
+    constructor(private router: Router,
+        private http: Http) {
     }
 
     public handleAuthentication(): void {
-        this.auth0.parseHash({ _idTokenVerification: false }, (err: any, authResult: any) => {
-            if (err) {
-                alert(`Error: ${err.errorDescription}`);
-                this.router.navigate(['/login']);
-            }
-            if (authResult && authResult.accessToken && authResult.idToken) {
-                window.location.hash = '';
-                localStorage.setItem('access_token', authResult.accessToken);
-                localStorage.setItem('id_token', authResult.idToken);
-                this.router.navigate(['/create']);
-            }
-        });
+        if (!this.isAuthenticated()) {
+            this.router.navigate(['/login']);
+        }
+        else {
+            this.router.navigate(['/create']);
+        }
     }
 
     public login(loginDetails: LoginDetails): void {
         var username: string = loginDetails.username;
         var password: string = loginDetails.password;
-
-        this.auth0.redirect.loginWithCredentials({
-            connection: 'Username-Password-Authentication',
-            username,
-            password
-        }, (err: any) => {
-            if (err && err.description) {
-                return alert(err.description);
-            }
-        });
+        var loginUrl = `${this.authUrl}/login`;
+        let headers = new Headers({ 'Content-Type': 'application/json' });
+        var encoded = btoa(username + ":" + password);
+        headers.append("Authorization", "Basic " + encoded);
+        this.http.post(loginUrl, { body: "" }, { headers: headers })
+            .toPromise().catch(this.handleError)
+            .then(response => {
+                if (response.ok) {
+                    localStorage.setItem('id_token', response.json());
+                    this.router.navigate(['/create']);
+                }
+                else {
+                    return alert("Invalid username/password");
+                }
+            });
     }
 
-    public signup(email: string, password: string): void {
-        this.auth0.redirect.signupAndLogin({
-            connection: 'Username-Password-Authentication',
-            email,
-            password,
-        }, (err: any) => {
-            if (err) return alert(err.description);
-        });
-    };
-
     public isAuthenticated(): boolean {
-        return tokenNotExpired();
+        var tokenEncoded = localStorage.getItem('id_token');
+        if (tokenEncoded !== null) {
+            var tokenDecoded = atob(tokenEncoded);
+            var tokenInfo = tokenDecoded.split('|');
+            if (tokenInfo.length > 2) {
+                var username = tokenInfo[0];
+                var authToken = tokenInfo[1];
+                var tokenExpiry = tokenInfo[2];
+                if (username !== "" && authToken !== "") {
+                    var tokenExpiryDate = new Date(tokenExpiry);
+                    var now = new Date();
+                    var now_utc = new Date(now.getUTCFullYear(), now.getUTCMonth(), now.getUTCDate(), now.getUTCHours(), now.getUTCMinutes(), now.getUTCSeconds());
+                    if (tokenExpiryDate > now_utc) {
+                        return true;
+                    }
+                }
+            }
+        }
+        return false;
     };
 
     public logout(): void {
-        localStorage.removeItem('access_token');
         localStorage.removeItem('id_token');
+        this.router.navigate(['/login']);
     };
 
-    private setUser(authResult: any): void {
-        localStorage.setItem('access_token', authResult.accessToken);
-        localStorage.setItem('id_token', authResult.idToken);
+    private handleError(error: any): Promise<any> {
+        console.error('An error occurred while performing user operations', error);
+        return Promise.reject(error.message || error);
     };
-
 }

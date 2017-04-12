@@ -11,12 +11,12 @@ import 'rxjs/add/operator/toPromise';
 @Injectable()
 export class CountryService {
     private countriesUrl = `${serverConfig.protocol}://${serverConfig.hostname}:${serverConfig.port}/api/countries`;
-    private headers = new Headers({ 'Content-Type': 'application/json' });
-
-    constructor(private authHttp: AuthHttp) { }
+    constructor(private http: Http) { }
 
     getCountries(): Observable<Country[]> {
-        return this.authHttp.get(this.countriesUrl)
+        let headers = new Headers({ 'Content-Type': 'application/json' });
+        headers.append("Authorization", "Bearer " + localStorage.getItem('id_token'));
+        return this.http.get(this.countriesUrl, { headers: headers })
             .map(response => response.json() as Country[]);
     };
 
