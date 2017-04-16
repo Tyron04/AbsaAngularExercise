@@ -10,6 +10,7 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 };
 var core_1 = require("@angular/core");
 var http_1 = require("@angular/http");
+var angular2_jwt_1 = require("angular2-jwt");
 var server_config_1 = require("../../config/server.config");
 require("rxjs/add/operator/map");
 require("rxjs/add/operator/toPromise");
@@ -20,25 +21,24 @@ var UserService = (function () {
         this.headers = new http_1.Headers({ "Authorization": "Bearer " + localStorage.getItem('id_token') });
     }
     UserService.prototype.getUsers = function () {
-        console.log(this.usersUrl);
-        return this.http.get(this.usersUrl, { headers: this.headers })
+        return this.http.get(this.usersUrl)
             .map(function (response) { return response.json(); });
     };
     ;
     UserService.prototype.getUser = function (id) {
         var url = this.usersUrl + "/" + id;
-        return this.http.get(url, { headers: this.headers })
+        return this.http.get(url)
             .map(function (response) { return response.json(); });
     };
     ;
     UserService.prototype.create = function (user) {
-        return this.http.post(this.usersUrl, user, { headers: this.headers })
+        return this.http.post(this.usersUrl, user)
             .map(function (response) { return response.json(); });
     };
     ;
     UserService.prototype.update = function (user) {
-        var url = this.usersUrl + "/" + user.Id;
-        return this.http.put(url, user, { headers: this.headers })
+        var url = this.usersUrl + "/" + user._id;
+        return this.http.put(url, user)
             .map(function (response) { return response.json(); });
     };
     ;
@@ -51,7 +51,7 @@ var UserService = (function () {
 }());
 UserService = __decorate([
     core_1.Injectable(),
-    __metadata("design:paramtypes", [http_1.Http])
+    __metadata("design:paramtypes", [angular2_jwt_1.AuthHttp])
 ], UserService);
 exports.UserService = UserService;
 //# sourceMappingURL=user.service.js.map

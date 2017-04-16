@@ -16,7 +16,12 @@ namespace Server.Repository
         private readonly MongoCollection<T> _collection;
         public Mongo(string tableName)
         {
+            var conn = Environment.GetEnvironmentVariable("MONGO_PORT_27017_TCP_ADDR");
             var connectionString = ConfigurationManager.AppSettings["mongoConnectionString"];
+            if (!string.IsNullOrWhiteSpace(conn))
+            {
+                connectionString = connectionString.Replace("localhost", conn);
+            }
             var databaseName = ConfigurationManager.AppSettings["mongoDatabaseName"];
             var client = new MongoClient(connectionString);
             var server = client.GetServer();

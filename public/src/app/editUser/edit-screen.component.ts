@@ -52,7 +52,7 @@ export class EditScreenComponent implements OnInit {
 
     update(): void {
         var updatedUser = this.editForm.value as User;
-        updatedUser.Id = this.user.Id;
+        updatedUser._id = this.user._id;
         this.userService.update(updatedUser)
             .subscribe(() => {
                 this.router.navigate(['/users']);

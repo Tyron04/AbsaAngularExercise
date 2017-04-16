@@ -18,12 +18,12 @@
                 </thead>
                 <tbody>
                     <tr *ngFor="let user of users">
-                        <td>{{user.Id}}</td>
+                        <td>{{user._id}}</td>
                         <td>{{user.Name}}</td>
                         <td>{{user.Surname}}</td>
                         <td>{{user.Country}}</td>
                         <td>
-                            <a onclick="blockUI()" class="actionButton" [routerLink]="['/edit', user.Id]"  title="Modify User"><span class="glyphicon glyphicon-pencil"></span></a>
+                            <a  class="actionButton" [routerLink]="['/edit', user._id]"  title="Modify User"><span class="glyphicon glyphicon-pencil"></span></a>
                         </td>
                     </tr>
                 </tbody>

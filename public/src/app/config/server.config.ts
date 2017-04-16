@@ -6,6 +6,6 @@ interface ServerConfiguration {
 
 export const serverConfig: ServerConfiguration = {
     hostname: "localhost",
-    port: "57025",
+    port: "3001",
     protocol: "http"
 };

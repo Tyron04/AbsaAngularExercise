@@ -50,7 +50,7 @@ var EditScreenComponent = (function () {
     EditScreenComponent.prototype.update = function () {
         var _this = this;
         var updatedUser = this.editForm.value;
-        updatedUser.Id = this.user.Id;
+        updatedUser._id = this.user._id;
         this.userService.update(updatedUser)
             .subscribe(function () {
             _this.router.navigate(['/users']);

@@ -1,7 +1,7 @@
 "use strict";
 exports.serverConfig = {
     hostname: "localhost",
-    port: "57025",
+    port: "3001",
     protocol: "http"
 };
 //# sourceMappingURL=server.config.js.map

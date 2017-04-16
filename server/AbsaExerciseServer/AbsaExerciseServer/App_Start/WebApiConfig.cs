@@ -7,21 +7,28 @@ using System.Web.Http.Cors;
 
 namespace AbsaExerciseServer
 {
-  public static class WebApiConfig
-  {
-    public static void Register(HttpConfiguration config)
+    public static class WebApiConfig
     {
-      // Web API configuration and services
-      var cors = new EnableCorsAttribute(ConfigurationManager.AppSettings["clientUrl"], "*", "*");
-      config.EnableCors(cors);
-      // Web API routes
-      config.MapHttpAttributeRoutes();
+        public static void Register(HttpConfiguration config)
+        {
+            // Web API configuration and services
+            //var cors = new EnableCorsAttribute(ConfigurationManager.AppSettings["clientUrl"], "*", "*");
+            var cors = new EnableCorsAttribute("*", "*", "*");
+            config.EnableCors(cors);
+            // Web API routes
+            config.MapHttpAttributeRoutes();
 
-      config.Routes.MapHttpRoute(
-          name: "DefaultApi",
-          routeTemplate: "api/{controller}/{id}",
-          defaults: new { id = RouteParameter.Optional }
-      );
+            config.Routes.MapHttpRoute(
+                name: "Index",
+                routeTemplate: "api/Default/{id}",
+                defaults: new { id = RouteParameter.Optional }
+            );
+
+            config.Routes.MapHttpRoute(
+                name: "DefaultApi",
+                routeTemplate: "api/{controller}/{id}",
+                defaults: new { id = RouteParameter.Optional }
+            );
+        }
     }
-  }
 }

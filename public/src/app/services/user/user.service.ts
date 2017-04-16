@@ -13,28 +13,27 @@ import 'rxjs/add/operator/toPromise';
 export class UserService {
     private usersUrl = `${serverConfig.protocol}://${serverConfig.hostname}:${serverConfig.port}/api/users`;
     private headers = new Headers({ "Authorization": "Bearer " + localStorage.getItem('id_token') });
-    constructor(private http: Http) { }
+    constructor(private http: AuthHttp) { }
 
     getUsers(): Observable<User[]> {
-        console.log(this.usersUrl);
-        return this.http.get(this.usersUrl, { headers: this.headers })
+        return this.http.get(this.usersUrl)
             .map(response => response.json() as User[]);
     };
 
     getUser(id: number): Observable<User> {
         var url = `${this.usersUrl}/${id}`;
-        return this.http.get(url, { headers: this.headers })
+        return this.http.get(url)
             .map(response => response.json() as User);
     };
 
     create(user: User): Observable<User> {
-        return this.http.post(this.usersUrl, user, { headers: this.headers })
+        return this.http.post(this.usersUrl, user)
             .map(response => response.json() as User);
     };
 
     update(user: User): Observable<User> {
-        var url = `${this.usersUrl}/${user.Id}`;
-        return this.http.put(url, user, { headers: this.headers })
+        var url = `${this.usersUrl}/${user._id}`;
+        return this.http.put(url, user)
             .map(response => response.json() as User);
     };
 
