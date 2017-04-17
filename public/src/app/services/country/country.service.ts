@@ -16,7 +16,7 @@ export class CountryService {
     getCountries(): Observable<Country[]> {
         let headers = new Headers({ 'Content-Type': 'application/json' });
         headers.append("Authorization", "Bearer " + localStorage.getItem('id_token'));
-        return this.http.get(this.countriesUrl, { headers: headers })
+        return this.http.get(this.countriesUrl)
             .map(response => response.json() as Country[]);
     };
 

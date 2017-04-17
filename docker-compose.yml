@@ -6,17 +6,28 @@ services:
     ports:
       - "3000:3000" 
 
+  server: 
+    container_name: webServer
+    build: express-server
+    ports:
+      - "3001:3001" 
+    links: 
+     - database
+
+      
+  mongodata:  
+    image: mongo
+    volumes:
+      - /data/db
+    command: --break-mongo
+
   database:
-    container_name: mongodb
+    container_name: mongo
     image: mongo
     ports:
       - "27017:27017" 
-      
-  server: 
-    container_name: webServer
-    build: server
-    ports:
-      - "57022:57022" 
-    links: 
-     - database
+    volumes_from:
+      - mongodata
+    command: --smallfiles --rest
+
 

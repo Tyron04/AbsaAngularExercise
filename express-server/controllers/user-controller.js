@@ -2,7 +2,6 @@ var express = require('express')
 var User = require('../models/user')
 var router = express.Router()
 
-
 router.get('/', function (req, res, next) {
   return User.find(function (err, users) {
     if (err)
@@ -23,12 +22,11 @@ router.get('/:id', function (req, res, next) {
 
 router.post('/', function (req, res, next) {
   User.findOne().sort({_id: -1}).exec(function (err, user) {
-    var id
-    if (err) {
-      id = 1
-    } else {
+    var id = 1
+    if (user !== null) {
       id = user._id + 1
     }
+
     var user = new User({
       _id: id,
       Name: req.body.name,
@@ -36,35 +34,34 @@ router.post('/', function (req, res, next) {
       Country: req.body.country
     })
 
-    User.create(user)
-    return User.findOne({_id: req.params.id}, function (err, user) {
-      if (err)
-        res.send(err)
+    user.save(function (err) {
+      if (err) {
+        return err
+      }
+      return User.findOne({_id: id}, function (err, user) {
+        if (err)
+          res.send(err)
 
-      res.json(user)
+        res.json(user)
+      })
     })
   })
 })
 
 router.put('/:id', function (req, res, next) {
+  var id = req.params.id
   var user = new User({
-    _id: req.params.id,
+    _id: id,
     Name: req.body.name,
     Surname: req.body.surname,
     Country: req.body.country
   })
-  User.findOneAndUpdate({_id: req.params.id}, user, function (err, user) {
-    if (err) {
+  User.findByIdAndUpdate(id, user, function (err, updatedUser) {
+    if (err)
       return err
-    }
-    return User.findOne({_id: req.params.id}, function (err, user) {
-      if (err)
-        res.send(err)
-
-      res.json(user)
-    })
+    res.send(updatedUser)
   })
-})
 
+})
 
 module.exports = router

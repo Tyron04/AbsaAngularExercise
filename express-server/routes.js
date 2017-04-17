@@ -2,7 +2,7 @@ var User = require('./models/user')
 var userController = require('./controllers/user-controller')
 var countryController = require('./controllers/country-controller')
 var jwtConfig = require('./config/jwt')
-var jwt = require('express-jwt');
+var jwt = require('express-jwt')
 
 ;(function (routes) {
   routes.configureRoutes = function (app) {
@@ -12,8 +12,13 @@ var jwt = require('express-jwt');
       audience: jwtConfig.domain
     })
 
-    // Enable the use of the jwtCheck middleware in all of our routes
-    app.use(jwtCheck)
+    app.use(function (req, res, next) {
+      if (req.originalUrl === '/api/countries') {
+        return next()
+      } else {
+        return jwtCheck
+      }
+    })
     app.use('/api/users', userController)
     app.use('/api/countries', countryController)
 
