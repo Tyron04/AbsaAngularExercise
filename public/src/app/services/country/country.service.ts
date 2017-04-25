@@ -2,7 +2,6 @@ import { Http, Headers } from '@angular/http';
 import { Injectable } from '@angular/core';
 import { Country } from '../../models/country/country';
 import { Observable } from 'rxjs';
-import { AuthHttp } from 'angular2-jwt';
 import { serverConfig } from '../../config/server.config';
 
 import 'rxjs/add/operator/map'
@@ -14,8 +13,6 @@ export class CountryService {
     constructor(private http: Http) { }
 
     getCountries(): Observable<Country[]> {
-        let headers = new Headers({ 'Content-Type': 'application/json' });
-        headers.append("Authorization", "Bearer " + localStorage.getItem('id_token'));
         return this.http.get(this.countriesUrl)
             .map(response => response.json() as Country[]);
     };

@@ -19,9 +19,7 @@ var CountryService = (function () {
         this.countriesUrl = server_config_1.serverConfig.protocol + "://" + server_config_1.serverConfig.hostname + ":" + server_config_1.serverConfig.port + "/api/countries";
     }
     CountryService.prototype.getCountries = function () {
-        var headers = new http_1.Headers({ 'Content-Type': 'application/json' });
-        headers.append("Authorization", "Bearer " + localStorage.getItem('id_token'));
-        return this.http.get(this.countriesUrl, { headers: headers })
+        return this.http.get(this.countriesUrl)
             .map(function (response) { return response.json(); });
     };
     ;

@@ -41,7 +41,7 @@ export class CreateScreenComponent implements OnInit {
 
     getCountries(): void {
         this.countryService.getCountries()
-            .subscribe(countries => this.countries = countries,
+            .subscribe(countries => this.countries = countries as Country[],
             error => console.log(error));
     };
 
