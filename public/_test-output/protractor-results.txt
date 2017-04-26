@@ -1,0 +1,12 @@
+Protractor results for: 4/26/2017, 2:19:11 PM
+
+AppDir:./
+  Suite: Create User Screen Tests -- passed
+    passed - should display: Create New User
+    passed - should contain countries
+    passed - should insert a new user in the db
+
+  Suite: Login Tests -- passed
+    passed - should display: Welcome to the Absa Exercise Portal
+    passed - should log in a user with trusted credentials
+
