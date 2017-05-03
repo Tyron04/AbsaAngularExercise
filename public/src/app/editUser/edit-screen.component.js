@@ -22,9 +22,9 @@ var EditScreenComponent = (function () {
         this.formBuilder = formBuilder;
         this.countryService = countryService;
         this.editForm = this.formBuilder.group({
-            name: ["", forms_1.Validators.required],
-            surname: ["", forms_1.Validators.required],
-            country: ["", forms_1.Validators.required]
+            Name: ['', forms_1.Validators.required],
+            Surname: ['', forms_1.Validators.required],
+            Country: ['', forms_1.Validators.required]
         });
     }
     EditScreenComponent.prototype.ngOnInit = function () {
@@ -35,9 +35,9 @@ var EditScreenComponent = (function () {
             .subscribe(function (user) {
             _this.user = user;
             _this.editForm.setValue({
-                name: _this.user.Name,
-                surname: _this.user.Surname,
-                country: _this.user.Country
+                Name: _this.user.Name,
+                Surname: _this.user.Surname,
+                Country: _this.user.Country
             });
         }, function (error) { return console.log(error); });
     };

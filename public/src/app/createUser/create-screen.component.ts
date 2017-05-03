@@ -16,23 +16,25 @@ export class CreateScreenComponent implements OnInit {
     @Input() user: User;
     countries: Country[];
 
+    createForm = this.formBuilder.group({
+        Name: ['', Validators.required],
+        Surname: ['', Validators.required],
+        Country: ['', Validators.required]
+    });
+
     constructor(private router: Router,
         private countryService: CountryService,
         private userService: UserService,
         private formBuilder: FormBuilder) { }
 
-    createForm = this.formBuilder.group({
-        name: ["", Validators.required],
-        surname: ["", Validators.required],
-        country: ["", Validators.required]
-    });
 
     ngOnInit(): void {
         this.getCountries();
     };
 
     create(): void {
-        this.userService.create(this.createForm.value as User)
+        console.log(this.createForm.value as User);
+        this.userService.create(this.createForm.value)
             .subscribe(() => {
                 this.router.navigate(['/users']);
             },

@@ -1,4 +1,4 @@
-import { Component, OnInit, Input } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute, Params, Router } from '@angular/router';
 import { UserService } from '../services/user/user.service';
 import { User } from '../models/user/user';
@@ -6,7 +6,7 @@ import { FormBuilder, Validators } from '@angular/forms';
 import { CountryService } from '../services/country/country.service';
 import { Country } from '../models/country/country';
 
-import 'rxjs/add/operator/switchMap'
+import 'rxjs/add/operator/switchMap';
 
 @Component({
     selector: 'edit-user',
@@ -18,17 +18,19 @@ export class EditScreenComponent implements OnInit {
     user: User;
     countries: Country[];
 
+
+    editForm = this.formBuilder.group({
+        Name: ['', Validators.required],
+        Surname: ['', Validators.required],
+        Country: ['', Validators.required]
+    });
+
     constructor(private userService: UserService,
         private route: ActivatedRoute,
         private router: Router,
         private formBuilder: FormBuilder,
         private countryService: CountryService) { }
 
-    editForm = this.formBuilder.group({
-        name: ["", Validators.required],
-        surname: ["", Validators.required],
-        country: ["", Validators.required]
-    });
     ngOnInit(): void {
         this.getCountries();
         this.route.params
@@ -36,9 +38,9 @@ export class EditScreenComponent implements OnInit {
             .subscribe(user => {
                 this.user = user;
                 this.editForm.setValue({
-                    name: this.user.Name,
-                    surname: this.user.Surname,
-                    country: this.user.Country
+                    Name: this.user.Name,
+                    Surname: this.user.Surname,
+                    Country: this.user.Country
                 });
             },
             error => console.log(error));
@@ -51,7 +53,7 @@ export class EditScreenComponent implements OnInit {
     }
 
     update(): void {
-        var updatedUser = this.editForm.value as User;
+        let updatedUser = this.editForm.value as User;
         updatedUser._id = this.user._id;
         this.userService.update(updatedUser)
             .subscribe(() => {

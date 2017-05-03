@@ -12,15 +12,16 @@ import { FormBuilder, Validators } from '@angular/forms';
 })
 
 export class LoginComponent {
-    title = "Welcome to the Absa Exercise Portal";
+    title = 'Welcome to the Absa Exercise Portal';
+
+    loginForm = this.formBuilder.group({
+        username: ['', Validators.required],
+        password: ['', Validators.required]
+    });
+
     constructor(private loginService: LoginService,
         private router: Router,
         private formBuilder: FormBuilder) { }
-
-    loginForm = this.formBuilder.group({
-        username: ["", Validators.required],
-        password: ["", Validators.required]
-    })
 
     login(): void {
         this.loginService.login(this.loginForm.value as LoginDetails);

@@ -1,4 +1,4 @@
-export class LoginDetails{
-    username:string;
-    password:string;
+export class LoginDetails {
+    username: string;
+    password: string;
 };

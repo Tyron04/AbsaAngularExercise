@@ -60,11 +60,6 @@ var LoginService = (function () {
         localStorage.removeItem('id_token');
     };
     ;
-    LoginService.prototype.setUser = function (authResult) {
-        localStorage.setItem('access_token', authResult.accessToken);
-        localStorage.setItem('id_token', authResult.idToken);
-    };
-    ;
     return LoginService;
 }());
 LoginService = __decorate([

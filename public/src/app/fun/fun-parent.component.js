@@ -11,7 +11,7 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 var core_1 = require("@angular/core");
 var FunParentComponent = (function () {
     function FunParentComponent() {
-        this.buttonValue = "Click me now!";
+        this.buttonValue = 'Click me now!';
     }
     FunParentComponent.prototype.clicked = function () {
         alert("Disappointed aren't you?");
@@ -21,7 +21,7 @@ var FunParentComponent = (function () {
 }());
 FunParentComponent = __decorate([
     core_1.Component({
-        selector: "fun-parent",
+        selector: 'fun-parent',
         template: "<h2>Let's have some fun</h2>\n    <fun-button [displayValue]=\"buttonValue\" (clickEvent)=\"clicked()\"></fun-button>\n    ",
         styles: [""]
     }),

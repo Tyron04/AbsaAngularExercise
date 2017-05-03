@@ -22,7 +22,7 @@ var AuthGuardModule = (function () {
         }
         else {
             this.router.navigate(['/login']);
-            alert("You need to be logged in to view this resource");
+            alert('You need to be logged in to view this resource');
             return false;
         }
     };

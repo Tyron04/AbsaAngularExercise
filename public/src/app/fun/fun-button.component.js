@@ -29,7 +29,7 @@ __decorate([
 ], FunButtonComponent.prototype, "clickEvent", void 0);
 FunButtonComponent = __decorate([
     core_1.Component({
-        selector: "fun-button",
+        selector: 'fun-button',
         template: "<button class=\"btn btn-primary\" (click)=\"onClick()\">{{displayValue}}</button>"
     })
 ], FunButtonComponent);

@@ -1,7 +1,7 @@
 import { Component, Input, Output, EventEmitter } from '@angular/core';
 
 @Component({
-    selector: "fun-button",
+    selector: 'fun-button',
     template: `<button class="btn btn-primary" (click)="onClick()">{{displayValue}}</button>`
 })
 

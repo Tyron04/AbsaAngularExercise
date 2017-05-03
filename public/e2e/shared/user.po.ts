@@ -5,16 +5,16 @@ export class User {
         return element(by.css('form'));
     }
     getNameInput(): ElementFinder {
-        return element(by.css("input[formControlName=name]"))
+        return element(by.css("input[formControlName=Name]"))
     }
     getSurnameInput(): ElementFinder {
-        return element(by.css("input[formControlName=surname]"))
+        return element(by.css("input[formControlName=Surname]"))
     }
     getCountryInput(): ElementFinder {
-        return element(by.css("select[formControlName=country]"))
+        return element(by.css("select[formControlName=Country]"))
     }
      getCountries(): ElementArrayFinder {
-        return element.all(by.css("select[formControlName=country] option"))
+        return element.all(by.css("select[formControlName=Country] option"))
     }
     getSubmitButton(): ElementFinder {
         return element(by.css('button[type=submit]'));

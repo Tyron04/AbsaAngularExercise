@@ -7,16 +7,16 @@ var User = (function () {
         return protractor_1.element(protractor_1.by.css('form'));
     };
     User.prototype.getNameInput = function () {
-        return protractor_1.element(protractor_1.by.css("input[formControlName=name]"));
+        return protractor_1.element(protractor_1.by.css("input[formControlName=Name]"));
     };
     User.prototype.getSurnameInput = function () {
-        return protractor_1.element(protractor_1.by.css("input[formControlName=surname]"));
+        return protractor_1.element(protractor_1.by.css("input[formControlName=Surname]"));
     };
     User.prototype.getCountryInput = function () {
-        return protractor_1.element(protractor_1.by.css("select[formControlName=country]"));
+        return protractor_1.element(protractor_1.by.css("select[formControlName=Country]"));
     };
     User.prototype.getCountries = function () {
-        return protractor_1.element.all(protractor_1.by.css("select[formControlName=country] option"));
+        return protractor_1.element.all(protractor_1.by.css("select[formControlName=Country] option"));
     };
     User.prototype.getSubmitButton = function () {
         return protractor_1.element(protractor_1.by.css('button[type=submit]'));

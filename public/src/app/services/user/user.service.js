@@ -9,16 +9,15 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 var core_1 = require("@angular/core");
-var http_1 = require("@angular/http");
 var angular2_jwt_1 = require("angular2-jwt");
 var server_config_1 = require("../../config/server.config");
 require("rxjs/add/operator/map");
 require("rxjs/add/operator/toPromise");
 var UserService = (function () {
+    //private headers = new Headers({ 'Authorization': 'Bearer ' + localStorage.getItem('id_token') });
     function UserService(http) {
         this.http = http;
         this.usersUrl = server_config_1.serverConfig.protocol + "://" + server_config_1.serverConfig.hostname + ":" + server_config_1.serverConfig.port + "/api/users";
-        this.headers = new http_1.Headers({ "Authorization": "Bearer " + localStorage.getItem('id_token') });
     }
     UserService.prototype.getUsers = function () {
         return this.http.get(this.usersUrl)

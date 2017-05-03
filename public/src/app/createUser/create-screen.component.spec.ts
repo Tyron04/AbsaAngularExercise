@@ -5,11 +5,9 @@ import { CreateScreenComponent } from './create-screen.component';
 import { CountryService } from '../services/country/country.service';
 import { UserService } from '../services/user/user.service';
 import { Country } from '../models/country/country';
-import { User } from '../models/user/user';
-import { Observable } from 'rxjs/Rx';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
-import { RouterModule, Router } from '@angular/router';
-import { HttpModule, ResponseOptions, Response, Http, BaseRequestOptions, RequestMethod } from '@angular/http';
+import { Router } from '@angular/router';
+import { HttpModule, ResponseOptions, Response, Http, BaseRequestOptions } from '@angular/http';
 import { MockBackend } from '@angular/http/testing';
 import { AuthHttp, AUTH_PROVIDERS } from 'angular2-jwt';
 
@@ -34,16 +32,14 @@ let surname = 'Surajpal';
 let country = countries[0].Name;
 
 let validUser = {
-    name: firstname,
-    surname: surname,
-    country: country
+    Name: firstname,
+    Surname: surname,
+    Country: country
 };
 let countriesElem: HTMLElement;
-let mockAuthHttp: any;
-let spy: any;
 let mockRouter = {
     navigate: jasmine.createSpy('navigate')
-}
+};
 
 describe('create user screen', () => {
 
@@ -85,16 +81,16 @@ describe('create user screen', () => {
             fixture.whenStable().then(() => {
                 comp.ngOnInit();
                 fixture.detectChanges();
-                expect(countriesElem.children.length).toBe(4); //Add one more for the "--Select Country--" option
+                expect(countriesElem.children.length).toBe(4); // Add one more for the "--Select Country--" option
             });
 
         })));
     });
 
     function populateForm(firstName: string, surname: string, country: string) {
-        comp.createForm.controls['name'].setValue(firstName);
-        comp.createForm.controls['surname'].setValue(surname);
-        comp.createForm.controls['country'].setValue(country);
+        comp.createForm.controls['Name'].setValue(firstName);
+        comp.createForm.controls['Surname'].setValue(surname);
+        comp.createForm.controls['Country'].setValue(country);
     }
 
     describe('populated values', () => {

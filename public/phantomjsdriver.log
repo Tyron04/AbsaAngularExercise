@@ -1,0 +1,453 @@
+[INFO  - 2017-05-03T08:41:12.540Z] GhostDriver - Main - running on port 6056
+[INFO  - 2017-05-03T08:41:12.897Z] Session [43712a90-2fdc-11e7-927c-7d4edd8b5388] - page.settings - {"XSSAuditingEnabled":false,"javascriptCanCloseWindows":true,"javascriptCanOpenWindows":true,"javascriptEnabled":true,"loadImages":true,"localToRemoteUrlAccessEnabled":false,"userAgent":"Mozilla/5.0 (Windows NT 6.2; WOW64) AppleWebKit/538.1 (KHTML, like Gecko) PhantomJS/2.1.1 Safari/538.1","webSecurityEnabled":true}
+[INFO  - 2017-05-03T08:41:12.897Z] Session [43712a90-2fdc-11e7-927c-7d4edd8b5388] - page.customHeaders:  - {}
+[INFO  - 2017-05-03T08:41:12.897Z] Session [43712a90-2fdc-11e7-927c-7d4edd8b5388] - Session.negotiatedCapabilities - {"browserName":"phantomjs","version":"2.1.1","driverName":"ghostdriver","driverVersion":"1.2.0","platform":"windows-10-32bit","javascriptEnabled":true,"takesScreenshot":true,"handlesAlerts":false,"databaseEnabled":false,"locationContextEnabled":false,"applicationCacheEnabled":false,"browserConnectionEnabled":false,"cssSelectorsEnabled":true,"webStorageEnabled":false,"rotatable":false,"acceptSslCerts":false,"nativeEvents":true,"proxy":{"proxyType":"direct"}}
+[INFO  - 2017-05-03T08:41:12.898Z] SessionManagerReqHand - _postNewSessionCommand - New Session Created: 43712a90-2fdc-11e7-927c-7d4edd8b5388
+[ERROR - 2017-05-03T08:41:15.091Z] Session [43712a90-2fdc-11e7-927c-7d4edd8b5388] - page.onError - msg: Error: (SystemJS) Expected an identifier but found 'resolvedUrl' instead
+	eval@[native code]
+	invoke@http://localhost:3000/node_modules/zone.js/dist/zone.js:365:31
+	run@http://localhost:3000/node_modules/zone.js/dist/zone.js:125:49
+	http://localhost:3000/node_modules/zone.js/dist/zone.js:760:60
+	invokeTask@http://localhost:3000/node_modules/zone.js/dist/zone.js:398:36
+	runTask@http://localhost:3000/node_modules/zone.js/dist/zone.js:165:57
+	drainMicroTaskQueue@http://localhost:3000/node_modules/zone.js/dist/zone.js:593:42
+	g@http://localhost:3000/node_modules/core-js/client/shim.min.js:8:19058
+	http://localhost:3000/node_modules/core-js/client/shim.min.js:8:19180
+	k@http://localhost:3000/node_modules/core-js/client/shim.min.js:8:14294
+	Evaluating http://localhost:3000/systemjs-angular-loader.js
+	Error loading http://localhost:3000/systemjs-angular-loader.js
+	Error loading http://localhost:3000/app/app.module.js as "./app/app.module" from http://localhost:3000/main.js
+[ERROR - 2017-05-03T08:41:15.092Z] Session [43712a90-2fdc-11e7-927c-7d4edd8b5388] - page.onError - stack:
+  (anonymous function) (http://localhost:3000/:25)
+[ERROR - 2017-05-03T08:41:24.216Z] Session [43712a90-2fdc-11e7-927c-7d4edd8b5388] - page.onError - msg: Error: (SystemJS) Expected an identifier but found 'resolvedUrl' instead
+	eval@[native code]
+	invoke@http://localhost:3000/node_modules/zone.js/dist/zone.js:365:31
+	run@http://localhost:3000/node_modules/zone.js/dist/zone.js:125:49
+	http://localhost:3000/node_modules/zone.js/dist/zone.js:760:60
+	invokeTask@http://localhost:3000/node_modules/zone.js/dist/zone.js:398:36
+	runTask@http://localhost:3000/node_modules/zone.js/dist/zone.js:165:57
+	drainMicroTaskQueue@http://localhost:3000/node_modules/zone.js/dist/zone.js:593:42
+	g@http://localhost:3000/node_modules/core-js/client/shim.min.js:8:19058
+	http://localhost:3000/node_modules/core-js/client/shim.min.js:8:19180
+	k@http://localhost:3000/node_modules/core-js/client/shim.min.js:8:14294
+	Evaluating http://localhost:3000/systemjs-angular-loader.js
+	Error loading http://localhost:3000/systemjs-angular-loader.js
+	Error loading http://localhost:3000/app/app.module.js as "./app/app.module" from http://localhost:3000/main.js
+[ERROR - 2017-05-03T08:41:24.216Z] Session [43712a90-2fdc-11e7-927c-7d4edd8b5388] - page.onError - stack:
+  (anonymous function) (http://localhost:3000/create:25)
+[ERROR - 2017-05-03T08:41:34.627Z] Session [43712a90-2fdc-11e7-927c-7d4edd8b5388] - page.onError - msg: Error: (SystemJS) Expected an identifier but found 'resolvedUrl' instead
+	eval@[native code]
+	invoke@http://localhost:3000/node_modules/zone.js/dist/zone.js:365:31
+	run@http://localhost:3000/node_modules/zone.js/dist/zone.js:125:49
+	http://localhost:3000/node_modules/zone.js/dist/zone.js:760:60
+	invokeTask@http://localhost:3000/node_modules/zone.js/dist/zone.js:398:36
+	runTask@http://localhost:3000/node_modules/zone.js/dist/zone.js:165:57
+	drainMicroTaskQueue@http://localhost:3000/node_modules/zone.js/dist/zone.js:593:42
+	g@http://localhost:3000/node_modules/core-js/client/shim.min.js:8:19058
+	http://localhost:3000/node_modules/core-js/client/shim.min.js:8:19180
+	k@http://localhost:3000/node_modules/core-js/client/shim.min.js:8:14294
+	Evaluating http://localhost:3000/systemjs-angular-loader.js
+	Error loading http://localhost:3000/systemjs-angular-loader.js
+	Error loading http://localhost:3000/app/app.module.js as "./app/app.module" from http://localhost:3000/main.js
+[ERROR - 2017-05-03T08:41:34.627Z] Session [43712a90-2fdc-11e7-927c-7d4edd8b5388] - page.onError - stack:
+  (anonymous function) (http://localhost:3000/create:25)
+[ERROR - 2017-05-03T08:41:45.194Z] Session [43712a90-2fdc-11e7-927c-7d4edd8b5388] - page.onError - msg: Error: (SystemJS) Expected an identifier but found 'resolvedUrl' instead
+	eval@[native code]
+	invoke@http://localhost:3000/node_modules/zone.js/dist/zone.js:365:31
+	run@http://localhost:3000/node_modules/zone.js/dist/zone.js:125:49
+	http://localhost:3000/node_modules/zone.js/dist/zone.js:760:60
+	invokeTask@http://localhost:3000/node_modules/zone.js/dist/zone.js:398:36
+	runTask@http://localhost:3000/node_modules/zone.js/dist/zone.js:165:57
+	drainMicroTaskQueue@http://localhost:3000/node_modules/zone.js/dist/zone.js:593:42
+	g@http://localhost:3000/node_modules/core-js/client/shim.min.js:8:19058
+	http://localhost:3000/node_modules/core-js/client/shim.min.js:8:19180
+	k@http://localhost:3000/node_modules/core-js/client/shim.min.js:8:14294
+	Evaluating http://localhost:3000/systemjs-angular-loader.js
+	Error loading http://localhost:3000/systemjs-angular-loader.js
+	Error loading http://localhost:3000/app/app.module.js as "./app/app.module" from http://localhost:3000/main.js
+[ERROR - 2017-05-03T08:41:45.194Z] Session [43712a90-2fdc-11e7-927c-7d4edd8b5388] - page.onError - stack:
+  (anonymous function) (http://localhost:3000/:25)
+[ERROR - 2017-05-03T08:41:55.736Z] Session [43712a90-2fdc-11e7-927c-7d4edd8b5388] - page.onError - msg: Error: (SystemJS) Expected an identifier but found 'resolvedUrl' instead
+	eval@[native code]
+	invoke@http://localhost:3000/node_modules/zone.js/dist/zone.js:365:31
+	run@http://localhost:3000/node_modules/zone.js/dist/zone.js:125:49
+	http://localhost:3000/node_modules/zone.js/dist/zone.js:760:60
+	invokeTask@http://localhost:3000/node_modules/zone.js/dist/zone.js:398:36
+	runTask@http://localhost:3000/node_modules/zone.js/dist/zone.js:165:57
+	drainMicroTaskQueue@http://localhost:3000/node_modules/zone.js/dist/zone.js:593:42
+	g@http://localhost:3000/node_modules/core-js/client/shim.min.js:8:19058
+	http://localhost:3000/node_modules/core-js/client/shim.min.js:8:19180
+	k@http://localhost:3000/node_modules/core-js/client/shim.min.js:8:14294
+	Evaluating http://localhost:3000/systemjs-angular-loader.js
+	Error loading http://localhost:3000/systemjs-angular-loader.js
+	Error loading http://localhost:3000/app/app.module.js as "./app/app.module" from http://localhost:3000/main.js
+[ERROR - 2017-05-03T08:41:55.736Z] Session [43712a90-2fdc-11e7-927c-7d4edd8b5388] - page.onError - stack:
+  (anonymous function) (http://localhost:3000/:25)
+[INFO  - 2017-05-03T08:42:06.671Z] ShutdownReqHand - _handle - About to shutdown
+[INFO  - 2017-05-03T08:50:36.727Z] GhostDriver - Main - running on port 7796
+[INFO  - 2017-05-03T08:50:37.027Z] Session [93b0e0d0-2fdd-11e7-a5fd-055340706b9d] - page.settings - {"XSSAuditingEnabled":false,"javascriptCanCloseWindows":true,"javascriptCanOpenWindows":true,"javascriptEnabled":true,"loadImages":true,"localToRemoteUrlAccessEnabled":false,"userAgent":"Mozilla/5.0 (Windows NT 6.2; WOW64) AppleWebKit/538.1 (KHTML, like Gecko) PhantomJS/2.1.1 Safari/538.1","webSecurityEnabled":true}
+[INFO  - 2017-05-03T08:50:37.028Z] Session [93b0e0d0-2fdd-11e7-a5fd-055340706b9d] - page.customHeaders:  - {}
+[INFO  - 2017-05-03T08:50:37.028Z] Session [93b0e0d0-2fdd-11e7-a5fd-055340706b9d] - Session.negotiatedCapabilities - {"browserName":"phantomjs","version":"2.1.1","driverName":"ghostdriver","driverVersion":"1.2.0","platform":"windows-10-32bit","javascriptEnabled":true,"takesScreenshot":true,"handlesAlerts":false,"databaseEnabled":false,"locationContextEnabled":false,"applicationCacheEnabled":false,"browserConnectionEnabled":false,"cssSelectorsEnabled":true,"webStorageEnabled":false,"rotatable":false,"acceptSslCerts":false,"nativeEvents":true,"proxy":{"proxyType":"direct"}}
+[INFO  - 2017-05-03T08:50:37.028Z] SessionManagerReqHand - _postNewSessionCommand - New Session Created: 93b0e0d0-2fdd-11e7-a5fd-055340706b9d
+[ERROR - 2017-05-03T08:50:38.909Z] Session [93b0e0d0-2fdd-11e7-a5fd-055340706b9d] - page.onError - msg: Error: (SystemJS) Expected an identifier but found 'resolvedUrl' instead
+	eval@[native code]
+	invoke@http://localhost:3000/node_modules/zone.js/dist/zone.js:365:31
+	run@http://localhost:3000/node_modules/zone.js/dist/zone.js:125:49
+	http://localhost:3000/node_modules/zone.js/dist/zone.js:760:60
+	invokeTask@http://localhost:3000/node_modules/zone.js/dist/zone.js:398:36
+	runTask@http://localhost:3000/node_modules/zone.js/dist/zone.js:165:57
+	drainMicroTaskQueue@http://localhost:3000/node_modules/zone.js/dist/zone.js:593:42
+	g@http://localhost:3000/node_modules/core-js/client/shim.min.js:8:19058
+	http://localhost:3000/node_modules/core-js/client/shim.min.js:8:19180
+	k@http://localhost:3000/node_modules/core-js/client/shim.min.js:8:14294
+	Evaluating http://localhost:3000/systemjs-angular-loader.js
+	Error loading http://localhost:3000/systemjs-angular-loader.js
+	Error loading http://localhost:3000/app/app.module.js as "./app/app.module" from http://localhost:3000/main.js
+[ERROR - 2017-05-03T08:50:38.910Z] Session [93b0e0d0-2fdd-11e7-a5fd-055340706b9d] - page.onError - stack:
+  (anonymous function) (http://localhost:3000/:25)
+[ERROR - 2017-05-03T08:50:48.249Z] Session [93b0e0d0-2fdd-11e7-a5fd-055340706b9d] - page.onError - msg: Error: (SystemJS) Expected an identifier but found 'resolvedUrl' instead
+	eval@[native code]
+	invoke@http://localhost:3000/node_modules/zone.js/dist/zone.js:365:31
+	run@http://localhost:3000/node_modules/zone.js/dist/zone.js:125:49
+	http://localhost:3000/node_modules/zone.js/dist/zone.js:760:60
+	invokeTask@http://localhost:3000/node_modules/zone.js/dist/zone.js:398:36
+	runTask@http://localhost:3000/node_modules/zone.js/dist/zone.js:165:57
+	drainMicroTaskQueue@http://localhost:3000/node_modules/zone.js/dist/zone.js:593:42
+	g@http://localhost:3000/node_modules/core-js/client/shim.min.js:8:19058
+	http://localhost:3000/node_modules/core-js/client/shim.min.js:8:19180
+	k@http://localhost:3000/node_modules/core-js/client/shim.min.js:8:14294
+	Evaluating http://localhost:3000/systemjs-angular-loader.js
+	Error loading http://localhost:3000/systemjs-angular-loader.js
+	Error loading http://localhost:3000/app/app.module.js as "./app/app.module" from http://localhost:3000/main.js
+[ERROR - 2017-05-03T08:50:48.249Z] Session [93b0e0d0-2fdd-11e7-a5fd-055340706b9d] - page.onError - stack:
+  (anonymous function) (http://localhost:3000/create:25)
+[ERROR - 2017-05-03T08:50:58.618Z] Session [93b0e0d0-2fdd-11e7-a5fd-055340706b9d] - page.onError - msg: Error: (SystemJS) Expected an identifier but found 'resolvedUrl' instead
+	eval@[native code]
+	invoke@http://localhost:3000/node_modules/zone.js/dist/zone.js:365:31
+	run@http://localhost:3000/node_modules/zone.js/dist/zone.js:125:49
+	http://localhost:3000/node_modules/zone.js/dist/zone.js:760:60
+	invokeTask@http://localhost:3000/node_modules/zone.js/dist/zone.js:398:36
+	runTask@http://localhost:3000/node_modules/zone.js/dist/zone.js:165:57
+	drainMicroTaskQueue@http://localhost:3000/node_modules/zone.js/dist/zone.js:593:42
+	g@http://localhost:3000/node_modules/core-js/client/shim.min.js:8:19058
+	http://localhost:3000/node_modules/core-js/client/shim.min.js:8:19180
+	k@http://localhost:3000/node_modules/core-js/client/shim.min.js:8:14294
+	Evaluating http://localhost:3000/systemjs-angular-loader.js
+	Error loading http://localhost:3000/systemjs-angular-loader.js
+	Error loading http://localhost:3000/app/app.module.js as "./app/app.module" from http://localhost:3000/main.js
+[ERROR - 2017-05-03T08:50:58.618Z] Session [93b0e0d0-2fdd-11e7-a5fd-055340706b9d] - page.onError - stack:
+  (anonymous function) (http://localhost:3000/create:25)
+[ERROR - 2017-05-03T08:51:09.188Z] Session [93b0e0d0-2fdd-11e7-a5fd-055340706b9d] - page.onError - msg: Error: (SystemJS) Expected an identifier but found 'resolvedUrl' instead
+	eval@[native code]
+	invoke@http://localhost:3000/node_modules/zone.js/dist/zone.js:365:31
+	run@http://localhost:3000/node_modules/zone.js/dist/zone.js:125:49
+	http://localhost:3000/node_modules/zone.js/dist/zone.js:760:60
+	invokeTask@http://localhost:3000/node_modules/zone.js/dist/zone.js:398:36
+	runTask@http://localhost:3000/node_modules/zone.js/dist/zone.js:165:57
+	drainMicroTaskQueue@http://localhost:3000/node_modules/zone.js/dist/zone.js:593:42
+	g@http://localhost:3000/node_modules/core-js/client/shim.min.js:8:19058
+	http://localhost:3000/node_modules/core-js/client/shim.min.js:8:19180
+	k@http://localhost:3000/node_modules/core-js/client/shim.min.js:8:14294
+	Evaluating http://localhost:3000/systemjs-angular-loader.js
+	Error loading http://localhost:3000/systemjs-angular-loader.js
+	Error loading http://localhost:3000/app/app.module.js as "./app/app.module" from http://localhost:3000/main.js
+[ERROR - 2017-05-03T08:51:09.189Z] Session [93b0e0d0-2fdd-11e7-a5fd-055340706b9d] - page.onError - stack:
+  (anonymous function) (http://localhost:3000/:25)
+[ERROR - 2017-05-03T08:51:19.890Z] Session [93b0e0d0-2fdd-11e7-a5fd-055340706b9d] - page.onError - msg: Error: (SystemJS) Expected an identifier but found 'resolvedUrl' instead
+	eval@[native code]
+	invoke@http://localhost:3000/node_modules/zone.js/dist/zone.js:365:31
+	run@http://localhost:3000/node_modules/zone.js/dist/zone.js:125:49
+	http://localhost:3000/node_modules/zone.js/dist/zone.js:760:60
+	invokeTask@http://localhost:3000/node_modules/zone.js/dist/zone.js:398:36
+	runTask@http://localhost:3000/node_modules/zone.js/dist/zone.js:165:57
+	drainMicroTaskQueue@http://localhost:3000/node_modules/zone.js/dist/zone.js:593:42
+	g@http://localhost:3000/node_modules/core-js/client/shim.min.js:8:19058
+	http://localhost:3000/node_modules/core-js/client/shim.min.js:8:19180
+	k@http://localhost:3000/node_modules/core-js/client/shim.min.js:8:14294
+	Evaluating http://localhost:3000/systemjs-angular-loader.js
+	Error loading http://localhost:3000/systemjs-angular-loader.js
+	Error loading http://localhost:3000/app/app.module.js as "./app/app.module" from http://localhost:3000/main.js
+[ERROR - 2017-05-03T08:51:19.890Z] Session [93b0e0d0-2fdd-11e7-a5fd-055340706b9d] - page.onError - stack:
+  (anonymous function) (http://localhost:3000/:25)
+[INFO  - 2017-05-03T08:51:30.409Z] ShutdownReqHand - _handle - About to shutdown
+[INFO  - 2017-05-03T08:53:06.949Z] GhostDriver - Main - running on port 2649
+[INFO  - 2017-05-03T08:53:07.299Z] Session [ed4269c0-2fdd-11e7-bf87-e5280d1f844f] - page.settings - {"XSSAuditingEnabled":false,"javascriptCanCloseWindows":true,"javascriptCanOpenWindows":true,"javascriptEnabled":true,"loadImages":true,"localToRemoteUrlAccessEnabled":false,"userAgent":"Mozilla/5.0 (Windows NT 6.2; WOW64) AppleWebKit/538.1 (KHTML, like Gecko) PhantomJS/2.1.1 Safari/538.1","webSecurityEnabled":true}
+[INFO  - 2017-05-03T08:53:07.299Z] Session [ed4269c0-2fdd-11e7-bf87-e5280d1f844f] - page.customHeaders:  - {}
+[INFO  - 2017-05-03T08:53:07.299Z] Session [ed4269c0-2fdd-11e7-bf87-e5280d1f844f] - Session.negotiatedCapabilities - {"browserName":"phantomjs","version":"2.1.1","driverName":"ghostdriver","driverVersion":"1.2.0","platform":"windows-10-32bit","javascriptEnabled":true,"takesScreenshot":true,"handlesAlerts":false,"databaseEnabled":false,"locationContextEnabled":false,"applicationCacheEnabled":false,"browserConnectionEnabled":false,"cssSelectorsEnabled":true,"webStorageEnabled":false,"rotatable":false,"acceptSslCerts":false,"nativeEvents":true,"proxy":{"proxyType":"direct"}}
+[INFO  - 2017-05-03T08:53:07.300Z] SessionManagerReqHand - _postNewSessionCommand - New Session Created: ed4269c0-2fdd-11e7-bf87-e5280d1f844f
+[ERROR - 2017-05-03T08:53:11.472Z] Session [ed4269c0-2fdd-11e7-bf87-e5280d1f844f] - page.onError - msg: Error: (SystemJS) Expected an identifier but found 'resolvedUrl' instead
+	eval@[native code]
+	invoke@http://localhost:3000/node_modules/zone.js/dist/zone.js:365:31
+	run@http://localhost:3000/node_modules/zone.js/dist/zone.js:125:49
+	http://localhost:3000/node_modules/zone.js/dist/zone.js:760:60
+	invokeTask@http://localhost:3000/node_modules/zone.js/dist/zone.js:398:36
+	runTask@http://localhost:3000/node_modules/zone.js/dist/zone.js:165:57
+	drainMicroTaskQueue@http://localhost:3000/node_modules/zone.js/dist/zone.js:593:42
+	g@http://localhost:3000/node_modules/core-js/client/shim.min.js:8:19058
+	http://localhost:3000/node_modules/core-js/client/shim.min.js:8:19180
+	k@http://localhost:3000/node_modules/core-js/client/shim.min.js:8:14294
+	Evaluating http://localhost:3000/systemjs-angular-loader.js
+	Error loading http://localhost:3000/systemjs-angular-loader.js
+	Error loading http://localhost:3000/app/app.module.js as "./app/app.module" from http://localhost:3000/main.js
+[ERROR - 2017-05-03T08:53:11.472Z] Session [ed4269c0-2fdd-11e7-bf87-e5280d1f844f] - page.onError - stack:
+  (anonymous function) (http://localhost:3000/:25)
+[ERROR - 2017-05-03T08:53:18.186Z] Session [ed4269c0-2fdd-11e7-bf87-e5280d1f844f] - page.onError - msg: Error: (SystemJS) Expected an identifier but found 'resolvedUrl' instead
+	eval@[native code]
+	invoke@http://localhost:3000/node_modules/zone.js/dist/zone.js:365:31
+	run@http://localhost:3000/node_modules/zone.js/dist/zone.js:125:49
+	http://localhost:3000/node_modules/zone.js/dist/zone.js:760:60
+	invokeTask@http://localhost:3000/node_modules/zone.js/dist/zone.js:398:36
+	runTask@http://localhost:3000/node_modules/zone.js/dist/zone.js:165:57
+	drainMicroTaskQueue@http://localhost:3000/node_modules/zone.js/dist/zone.js:593:42
+	g@http://localhost:3000/node_modules/core-js/client/shim.min.js:8:19058
+	http://localhost:3000/node_modules/core-js/client/shim.min.js:8:19180
+	k@http://localhost:3000/node_modules/core-js/client/shim.min.js:8:14294
+	Evaluating http://localhost:3000/systemjs-angular-loader.js
+	Error loading http://localhost:3000/systemjs-angular-loader.js
+	Error loading http://localhost:3000/app/app.module.js as "./app/app.module" from http://localhost:3000/main.js
+[ERROR - 2017-05-03T08:53:18.186Z] Session [ed4269c0-2fdd-11e7-bf87-e5280d1f844f] - page.onError - stack:
+  (anonymous function) (http://localhost:3000/create:25)
+[ERROR - 2017-05-03T08:53:28.125Z] Session [ed4269c0-2fdd-11e7-bf87-e5280d1f844f] - page.onError - msg: Error: (SystemJS) Expected an identifier but found 'resolvedUrl' instead
+	eval@[native code]
+	invoke@http://localhost:3000/node_modules/zone.js/dist/zone.js:365:31
+	run@http://localhost:3000/node_modules/zone.js/dist/zone.js:125:49
+	http://localhost:3000/node_modules/zone.js/dist/zone.js:760:60
+	invokeTask@http://localhost:3000/node_modules/zone.js/dist/zone.js:398:36
+	runTask@http://localhost:3000/node_modules/zone.js/dist/zone.js:165:57
+	drainMicroTaskQueue@http://localhost:3000/node_modules/zone.js/dist/zone.js:593:42
+	g@http://localhost:3000/node_modules/core-js/client/shim.min.js:8:19058
+	http://localhost:3000/node_modules/core-js/client/shim.min.js:8:19180
+	k@http://localhost:3000/node_modules/core-js/client/shim.min.js:8:14294
+	Evaluating http://localhost:3000/systemjs-angular-loader.js
+	Error loading http://localhost:3000/systemjs-angular-loader.js
+	Error loading http://localhost:3000/app/app.module.js as "./app/app.module" from http://localhost:3000/main.js
+[ERROR - 2017-05-03T08:53:28.125Z] Session [ed4269c0-2fdd-11e7-bf87-e5280d1f844f] - page.onError - stack:
+  (anonymous function) (http://localhost:3000/create:25)
+[ERROR - 2017-05-03T08:53:38.267Z] Session [ed4269c0-2fdd-11e7-bf87-e5280d1f844f] - page.onError - msg: Error: (SystemJS) Expected an identifier but found 'resolvedUrl' instead
+	eval@[native code]
+	invoke@http://localhost:3000/node_modules/zone.js/dist/zone.js:365:31
+	run@http://localhost:3000/node_modules/zone.js/dist/zone.js:125:49
+	http://localhost:3000/node_modules/zone.js/dist/zone.js:760:60
+	invokeTask@http://localhost:3000/node_modules/zone.js/dist/zone.js:398:36
+	runTask@http://localhost:3000/node_modules/zone.js/dist/zone.js:165:57
+	drainMicroTaskQueue@http://localhost:3000/node_modules/zone.js/dist/zone.js:593:42
+	g@http://localhost:3000/node_modules/core-js/client/shim.min.js:8:19058
+	http://localhost:3000/node_modules/core-js/client/shim.min.js:8:19180
+	k@http://localhost:3000/node_modules/core-js/client/shim.min.js:8:14294
+	Evaluating http://localhost:3000/systemjs-angular-loader.js
+	Error loading http://localhost:3000/systemjs-angular-loader.js
+	Error loading http://localhost:3000/app/app.module.js as "./app/app.module" from http://localhost:3000/main.js
+[ERROR - 2017-05-03T08:53:38.267Z] Session [ed4269c0-2fdd-11e7-bf87-e5280d1f844f] - page.onError - stack:
+  (anonymous function) (http://localhost:3000/:25)
+[ERROR - 2017-05-03T08:53:48.518Z] Session [ed4269c0-2fdd-11e7-bf87-e5280d1f844f] - page.onError - msg: Error: (SystemJS) Expected an identifier but found 'resolvedUrl' instead
+	eval@[native code]
+	invoke@http://localhost:3000/node_modules/zone.js/dist/zone.js:365:31
+	run@http://localhost:3000/node_modules/zone.js/dist/zone.js:125:49
+	http://localhost:3000/node_modules/zone.js/dist/zone.js:760:60
+	invokeTask@http://localhost:3000/node_modules/zone.js/dist/zone.js:398:36
+	runTask@http://localhost:3000/node_modules/zone.js/dist/zone.js:165:57
+	drainMicroTaskQueue@http://localhost:3000/node_modules/zone.js/dist/zone.js:593:42
+	g@http://localhost:3000/node_modules/core-js/client/shim.min.js:8:19058
+	http://localhost:3000/node_modules/core-js/client/shim.min.js:8:19180
+	k@http://localhost:3000/node_modules/core-js/client/shim.min.js:8:14294
+	Evaluating http://localhost:3000/systemjs-angular-loader.js
+	Error loading http://localhost:3000/systemjs-angular-loader.js
+	Error loading http://localhost:3000/app/app.module.js as "./app/app.module" from http://localhost:3000/main.js
+[ERROR - 2017-05-03T08:53:48.518Z] Session [ed4269c0-2fdd-11e7-bf87-e5280d1f844f] - page.onError - stack:
+  (anonymous function) (http://localhost:3000/:25)
+[INFO  - 2017-05-03T08:53:58.617Z] ShutdownReqHand - _handle - About to shutdown
+[INFO  - 2017-05-03T09:00:22.506Z] GhostDriver - Main - running on port 43284
+[INFO  - 2017-05-03T09:00:22.829Z] Session [f0db0460-2fde-11e7-8b09-453ae9f9a6a2] - page.settings - {"XSSAuditingEnabled":false,"javascriptCanCloseWindows":true,"javascriptCanOpenWindows":true,"javascriptEnabled":true,"loadImages":true,"localToRemoteUrlAccessEnabled":false,"userAgent":"Mozilla/5.0 (Windows NT 6.2; WOW64) AppleWebKit/538.1 (KHTML, like Gecko) PhantomJS/2.1.1 Safari/538.1","webSecurityEnabled":true}
+[INFO  - 2017-05-03T09:00:22.829Z] Session [f0db0460-2fde-11e7-8b09-453ae9f9a6a2] - page.customHeaders:  - {}
+[INFO  - 2017-05-03T09:00:22.829Z] Session [f0db0460-2fde-11e7-8b09-453ae9f9a6a2] - Session.negotiatedCapabilities - {"browserName":"phantomjs","version":"2.1.1","driverName":"ghostdriver","driverVersion":"1.2.0","platform":"windows-10-32bit","javascriptEnabled":true,"takesScreenshot":true,"handlesAlerts":false,"databaseEnabled":false,"locationContextEnabled":false,"applicationCacheEnabled":false,"browserConnectionEnabled":false,"cssSelectorsEnabled":true,"webStorageEnabled":false,"rotatable":false,"acceptSslCerts":false,"nativeEvents":true,"proxy":{"proxyType":"direct"}}
+[INFO  - 2017-05-03T09:00:22.829Z] SessionManagerReqHand - _postNewSessionCommand - New Session Created: f0db0460-2fde-11e7-8b09-453ae9f9a6a2
+[ERROR - 2017-05-03T09:00:27.282Z] Session [f0db0460-2fde-11e7-8b09-453ae9f9a6a2] - page.onError - msg: Error: (SystemJS) Expected an identifier but found 'resolvedUrl' instead
+	eval@[native code]
+	invoke@http://localhost:3000/node_modules/zone.js/dist/zone.js:365:31
+	run@http://localhost:3000/node_modules/zone.js/dist/zone.js:125:49
+	http://localhost:3000/node_modules/zone.js/dist/zone.js:760:60
+	invokeTask@http://localhost:3000/node_modules/zone.js/dist/zone.js:398:36
+	runTask@http://localhost:3000/node_modules/zone.js/dist/zone.js:165:57
+	drainMicroTaskQueue@http://localhost:3000/node_modules/zone.js/dist/zone.js:593:42
+	g@http://localhost:3000/node_modules/core-js/client/shim.min.js:8:19058
+	http://localhost:3000/node_modules/core-js/client/shim.min.js:8:19180
+	k@http://localhost:3000/node_modules/core-js/client/shim.min.js:8:14294
+	Evaluating http://localhost:3000/systemjs-angular-loader.js
+	Error loading http://localhost:3000/systemjs-angular-loader.js
+	Error loading http://localhost:3000/app/app.module.js as "./app/app.module" from http://localhost:3000/main.js
+[ERROR - 2017-05-03T09:00:27.282Z] Session [f0db0460-2fde-11e7-8b09-453ae9f9a6a2] - page.onError - stack:
+  (anonymous function) (http://localhost:3000/:25)
+[ERROR - 2017-05-03T09:00:33.648Z] Session [f0db0460-2fde-11e7-8b09-453ae9f9a6a2] - page.onError - msg: Error: (SystemJS) Expected an identifier but found 'resolvedUrl' instead
+	eval@[native code]
+	invoke@http://localhost:3000/node_modules/zone.js/dist/zone.js:365:31
+	run@http://localhost:3000/node_modules/zone.js/dist/zone.js:125:49
+	http://localhost:3000/node_modules/zone.js/dist/zone.js:760:60
+	invokeTask@http://localhost:3000/node_modules/zone.js/dist/zone.js:398:36
+	runTask@http://localhost:3000/node_modules/zone.js/dist/zone.js:165:57
+	drainMicroTaskQueue@http://localhost:3000/node_modules/zone.js/dist/zone.js:593:42
+	g@http://localhost:3000/node_modules/core-js/client/shim.min.js:8:19058
+	http://localhost:3000/node_modules/core-js/client/shim.min.js:8:19180
+	k@http://localhost:3000/node_modules/core-js/client/shim.min.js:8:14294
+	Evaluating http://localhost:3000/systemjs-angular-loader.js
+	Error loading http://localhost:3000/systemjs-angular-loader.js
+	Error loading http://localhost:3000/app/app.module.js as "./app/app.module" from http://localhost:3000/main.js
+[ERROR - 2017-05-03T09:00:33.648Z] Session [f0db0460-2fde-11e7-8b09-453ae9f9a6a2] - page.onError - stack:
+  (anonymous function) (http://localhost:3000/create:25)
+[INFO  - 2017-05-03T09:05:22.503Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2017-05-03T09:10:22.502Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2017-05-03T09:15:22.502Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2017-05-03T09:20:22.502Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2017-05-03T09:25:22.505Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2017-05-03T09:30:22.503Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2017-05-03T09:35:22.503Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2017-05-03T09:40:22.566Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2017-05-03T09:45:22.597Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2017-05-03T09:50:22.597Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2017-05-03T09:55:22.597Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2017-05-03T10:00:22.598Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2017-05-03T10:05:22.597Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2017-05-03T10:10:22.598Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2017-05-03T10:15:22.598Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2017-05-03T10:20:22.598Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2017-05-03T10:25:22.629Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2017-05-03T10:30:22.629Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2017-05-03T10:35:22.629Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2017-05-03T10:40:22.629Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2017-05-03T10:45:22.660Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2017-05-03T10:50:22.660Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2017-05-03T10:55:22.660Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2017-05-03T11:00:22.660Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2017-05-03T11:05:22.661Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2017-05-03T11:10:22.660Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2017-05-03T11:15:22.661Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2017-05-03T11:20:22.660Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2017-05-03T11:25:22.661Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2017-05-03T11:30:22.661Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2017-05-03T11:35:22.692Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2017-05-03T11:40:22.692Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2017-05-03T11:45:22.692Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2017-05-03T11:50:22.692Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2017-05-03T11:55:22.692Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2017-05-03T12:00:22.693Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2017-05-03T12:05:22.724Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2017-05-03T12:10:22.724Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2017-05-03T12:15:22.724Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2017-05-03T12:20:22.724Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+val@[native code]
+	invoke@http://localhost:3000/node_modules/zone.js/dist/zone.js:365:31
+	run@http://localhost:3000/node_modules/zone.js/dist/zone.js:125:49
+	http://localhost:3000/node_modules/zone.js/dist/zone.js:760:60
+	invokeTask@http://localhost:3000/node_modules/zone.js/dist/zone.js:398:36
+	runTask@http://localhost:3000/node_modules/zone.js/dist/zone.js:165:57
+	drainMicroTaskQueue@http://localhost:3000/node_modules/zone.js/dist/zone.js:593:42
+	g@http://localhost:3000/node_modules/core-js/client/shim.min.js:8:19058
+	http://localhost:3000/node_modules/core-js/client/shim.min.js:8:19180
+	k@http://localhost:3000/node_modules/core-js/client/shim.min.js:8:14294
+	Evaluating http://localhost:3000/systemjs-angular-loader.js
+	Error loading http://localhost:3000/systemjs-angular-loader.js
+	Error loading http://localhost:3000/app/app.module.js as "./app/app.module" from http://localhost:3000/main.js
+[ERROR - 2017-05-03T09:12:11.665Z] Session [849693d0-2fe0-11e7-9af2-6b53db3219b1] - page.onError - stack:
+  (anonymous function) (http://localhost:3000/:25)
+[ERROR - 2017-05-03T09:12:21.868Z] Session [849693d0-2fe0-11e7-9af2-6b53db3219b1] - page.onError - msg: Error: (SystemJS) Expected an identifier but found 'resolvedUrl' instead
+	eval@[native code]
+	invoke@http://localhost:3000/node_modules/zone.js/dist/zone.js:365:31
+	run@http://localhost:3000/node_modules/zone.js/dist/zone.js:125:49
+	http://localhost:3000/node_modules/zone.js/dist/zone.js:760:60
+	invokeTask@http://localhost:3000/node_modules/zone.js/dist/zone.js:398:36
+	runTask@http://localhost:3000/node_modules/zone.js/dist/zone.js:165:57
+	drainMicroTaskQueue@http://localhost:3000/node_modules/zone.js/dist/zone.js:593:42
+	g@http://localhost:3000/node_modules/core-js/client/shim.min.js:8:19058
+	http://localhost:3000/node_modules/core-js/client/shim.min.js:8:19180
+	k@http://localhost:3000/node_modules/core-js/client/shim.min.js:8:14294
+	Evaluating http://localhost:3000/systemjs-angular-loader.js
+	Error loading http://localhost:3000/systemjs-angular-loader.js
+	Error loading http://localhost:3000/app/app.module.js as "./app/app.module" from http://localhost:3000/main.js
+[ERROR - 2017-05-03T09:12:21.868Z] Session [849693d0-2fe0-11e7-9af2-6b53db3219b1] - page.onError - stack:
+  (anonymous function) (http://localhost:3000/:25)
+[INFO  - 2017-05-03T09:12:31.849Z] ShutdownReqHand - _handle - About to shutdown
+[INFO  - 2017-05-03T09:17:45.265Z] GhostDriver - Main - running on port 39472
+[INFO  - 2017-05-03T09:17:45.777Z] Session [5e8040a0-2fe1-11e7-9cef-419076fe4f8a] - page.settings - {"XSSAuditingEnabled":false,"javascriptCanCloseWindows":true,"javascriptCanOpenWindows":true,"javascriptEnabled":true,"loadImages":true,"localToRemoteUrlAccessEnabled":false,"userAgent":"Mozilla/5.0 (Windows NT 6.2; WOW64) AppleWebKit/538.1 (KHTML, like Gecko) PhantomJS/2.1.1 Safari/538.1","webSecurityEnabled":true}
+[INFO  - 2017-05-03T09:17:45.777Z] Session [5e8040a0-2fe1-11e7-9cef-419076fe4f8a] - page.customHeaders:  - {}
+[INFO  - 2017-05-03T09:17:45.777Z] Session [5e8040a0-2fe1-11e7-9cef-419076fe4f8a] - Session.negotiatedCapabilities - {"browserName":"phantomjs","version":"2.1.1","driverName":"ghostdriver","driverVersion":"1.2.0","platform":"windows-10-32bit","javascriptEnabled":true,"takesScreenshot":true,"handlesAlerts":false,"databaseEnabled":false,"locationContextEnabled":false,"applicationCacheEnabled":false,"browserConnectionEnabled":false,"cssSelectorsEnabled":true,"webStorageEnabled":false,"rotatable":false,"acceptSslCerts":false,"nativeEvents":true,"proxy":{"proxyType":"direct"}}
+[INFO  - 2017-05-03T09:17:45.777Z] SessionManagerReqHand - _postNewSessionCommand - New Session Created: 5e8040a0-2fe1-11e7-9cef-419076fe4f8a
+[ERROR - 2017-05-03T09:17:47.989Z] Session [5e8040a0-2fe1-11e7-9cef-419076fe4f8a] - page.onError - msg: Error: (SystemJS) Expected an identifier but found 'resolvedUrl' instead
+	eval@[native code]
+	invoke@http://localhost:3000/node_modules/zone.js/dist/zone.js:365:31
+	run@http://localhost:3000/node_modules/zone.js/dist/zone.js:125:49
+	http://localhost:3000/node_modules/zone.js/dist/zone.js:760:60
+	invokeTask@http://localhost:3000/node_modules/zone.js/dist/zone.js:398:36
+	runTask@http://localhost:3000/node_modules/zone.js/dist/zone.js:165:57
+	drainMicroTaskQueue@http://localhost:3000/node_modules/zone.js/dist/zone.js:593:42
+	g@http://localhost:3000/node_modules/core-js/client/shim.min.js:8:19058
+	http://localhost:3000/node_modules/core-js/client/shim.min.js:8:19180
+	k@http://localhost:3000/node_modules/core-js/client/shim.min.js:8:14294
+	Evaluating http://localhost:3000/systemjs-angular-loader.js
+	Error loading http://localhost:3000/systemjs-angular-loader.js
+	Error loading http://localhost:3000/app/app.module.js as "./app/app.module" from http://localhost:3000/main.js
+[ERROR - 2017-05-03T09:17:47.990Z] Session [5e8040a0-2fe1-11e7-9cef-419076fe4f8a] - page.onError - stack:
+  (anonymous function) (http://localhost:3000/:25)
+[ERROR - 2017-05-03T09:17:56.965Z] Session [5e8040a0-2fe1-11e7-9cef-419076fe4f8a] - page.onError - msg: Error: (SystemJS) Expected an identifier but found 'resolvedUrl' instead
+	eval@[native code]
+	invoke@http://localhost:3000/node_modules/zone.js/dist/zone.js:365:31
+	run@http://localhost:3000/node_modules/zone.js/dist/zone.js:125:49
+	http://localhost:3000/node_modules/zone.js/dist/zone.js:760:60
+	invokeTask@http://localhost:3000/node_modules/zone.js/dist/zone.js:398:36
+	runTask@http://localhost:3000/node_modules/zone.js/dist/zone.js:165:57
+	drainMicroTaskQueue@http://localhost:3000/node_modules/zone.js/dist/zone.js:593:42
+	g@http://localhost:3000/node_modules/core-js/client/shim.min.js:8:19058
+	http://localhost:3000/node_modules/core-js/client/shim.min.js:8:19180
+	k@http://localhost:3000/node_modules/core-js/client/shim.min.js:8:14294
+	Evaluating http://localhost:3000/systemjs-angular-loader.js
+	Error loading http://localhost:3000/systemjs-angular-loader.js
+	Error loading http://localhost:3000/app/app.module.js as "./app/app.module" from http://localhost:3000/main.js
+[ERROR - 2017-05-03T09:17:56.966Z] Session [5e8040a0-2fe1-11e7-9cef-419076fe4f8a] - page.onError - stack:
+  (anonymous function) (http://localhost:3000/create:25)
+[ERROR - 2017-05-03T09:18:07.064Z] Session [5e8040a0-2fe1-11e7-9cef-419076fe4f8a] - page.onError - msg: Error: (SystemJS) Expected an identifier but found 'resolvedUrl' instead
+	eval@[native code]
+	invoke@http://localhost:3000/node_modules/zone.js/dist/zone.js:365:31
+	run@http://localhost:3000/node_modules/zone.js/dist/zone.js:125:49
+	http://localhost:3000/node_modules/zone.js/dist/zone.js:760:60
+	invokeTask@http://localhost:3000/node_modules/zone.js/dist/zone.js:398:36
+	runTask@http://localhost:3000/node_modules/zone.js/dist/zone.js:165:57
+	drainMicroTaskQueue@http://localhost:3000/node_modules/zone.js/dist/zone.js:593:42
+	g@http://localhost:3000/node_modules/core-js/client/shim.min.js:8:19058
+	http://localhost:3000/node_modules/core-js/client/shim.min.js:8:19180
+	k@http://localhost:3000/node_modules/core-js/client/shim.min.js:8:14294
+	Evaluating http://localhost:3000/systemjs-angular-loader.js
+	Error loading http://localhost:3000/systemjs-angular-loader.js
+	Error loading http://localhost:3000/app/app.module.js as "./app/app.module" from http://localhost:3000/main.js
+[ERROR - 2017-05-03T09:18:07.065Z] Session [5e8040a0-2fe1-11e7-9cef-419076fe4f8a] - page.onError - stack:
+  (anonymous function) (http://localhost:3000/create:25)
+[ERROR - 2017-05-03T09:18:17.321Z] Session [5e8040a0-2fe1-11e7-9cef-419076fe4f8a] - page.onError - msg: Error: (SystemJS) Expected an identifier but found 'resolvedUrl' instead
+	eval@[native code]
+	invoke@http://localhost:3000/node_modules/zone.js/dist/zone.js:365:31
+	run@http://localhost:3000/node_modules/zone.js/dist/zone.js:125:49
+	http://localhost:3000/node_modules/zone.js/dist/zone.js:760:60
+	invokeTask@http://localhost:3000/node_modules/zone.js/dist/zone.js:398:36
+	runTask@http://localhost:3000/node_modules/zone.js/dist/zone.js:165:57
+	drainMicroTaskQueue@http://localhost:3000/node_modules/zone.js/dist/zone.js:593:42
+	g@http://localhost:3000/node_modules/core-js/client/shim.min.js:8:19058
+	http://localhost:3000/node_modules/core-js/client/shim.min.js:8:19180
+	k@http://localhost:3000/node_modules/core-js/client/shim.min.js:8:14294
+	Evaluating http://localhost:3000/systemjs-angular-loader.js
+	Error loading http://localhost:3000/systemjs-angular-loader.js
+	Error loading http://localhost:3000/app/app.module.js as "./app/app.module" from http://localhost:3000/main.js
+[ERROR - 2017-05-03T09:18:17.321Z] Session [5e8040a0-2fe1-11e7-9cef-419076fe4f8a] - page.onError - stack:
+  (anonymous function) (http://localhost:3000/:25)
+[ERROR - 2017-05-03T09:18:27.470Z] Session [5e8040a0-2fe1-11e7-9cef-419076fe4f8a] - page.onError - msg: Error: (SystemJS) Expected an identifier but found 'resolvedUrl' instead
+	eval@[native code]
+	invoke@http://localhost:3000/node_modules/zone.js/dist/zone.js:365:31
+	run@http://localhost:3000/node_modules/zone.js/dist/zone.js:125:49
+	http://localhost:3000/node_modules/zone.js/dist/zone.js:760:60
+	invokeTask@http://localhost:3000/node_modules/zone.js/dist/zone.js:398:36
+	runTask@http://localhost:3000/node_modules/zone.js/dist/zone.js:165:57
+	drainMicroTaskQueue@http://localhost:3000/node_modules/zone.js/dist/zone.js:593:42
+	g@http://localhost:3000/node_modules/core-js/client/shim.min.js:8:19058
+	http://localhost:3000/node_modules/core-js/client/shim.min.js:8:19180
+	k@http://localhost:3000/node_modules/core-js/client/shim.min.js:8:14294
+	Evaluating http://localhost:3000/systemjs-angular-loader.js
+	Error loading http://localhost:3000/systemjs-angular-loader.js
+	Error loading http://localhost:3000/app/app.module.js as "./app/app.module" from http://localhost:3000/main.js
+[ERROR - 2017-05-03T09:18:27.471Z] Session [5e8040a0-2fe1-11e7-9cef-419076fe4f8a] - page.onError - stack:
+  (anonymous function) (http://localhost:3000/:25)
+[INFO  - 2017-05-03T09:18:37.474Z] ShutdownReqHand - _handle - About to shutdown

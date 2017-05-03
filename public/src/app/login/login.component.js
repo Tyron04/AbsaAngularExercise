@@ -17,10 +17,10 @@ var LoginComponent = (function () {
         this.loginService = loginService;
         this.router = router;
         this.formBuilder = formBuilder;
-        this.title = "Welcome to the Absa Exercise Portal";
+        this.title = 'Welcome to the Absa Exercise Portal';
         this.loginForm = this.formBuilder.group({
-            username: ["", forms_1.Validators.required],
-            password: ["", forms_1.Validators.required]
+            username: ['', forms_1.Validators.required],
+            password: ['', forms_1.Validators.required]
         });
     }
     LoginComponent.prototype.login = function () {

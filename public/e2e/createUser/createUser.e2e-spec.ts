@@ -11,7 +11,6 @@ describe('Create User Screen Tests', function () {
   beforeEach(function () {
     loginObj = new Login();
     userObj = new User();
-
   });
 
   it('should display: ' + expectedMsg, function () {
@@ -24,7 +23,6 @@ describe('Create User Screen Tests', function () {
 
   it('should contain countries', () => {
     browser.get('/create');
-
     userObj.getCountries().count().then(count => expect(count).toBe(6));
   });
 

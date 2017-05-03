@@ -21,9 +21,9 @@ var CreateScreenComponent = (function () {
         this.userService = userService;
         this.formBuilder = formBuilder;
         this.createForm = this.formBuilder.group({
-            name: ["", forms_1.Validators.required],
-            surname: ["", forms_1.Validators.required],
-            country: ["", forms_1.Validators.required]
+            Name: ['', forms_1.Validators.required],
+            Surname: ['', forms_1.Validators.required],
+            Country: ['', forms_1.Validators.required]
         });
     }
     CreateScreenComponent.prototype.ngOnInit = function () {
@@ -32,6 +32,7 @@ var CreateScreenComponent = (function () {
     ;
     CreateScreenComponent.prototype.create = function () {
         var _this = this;
+        console.log(this.createForm.value);
         this.userService.create(this.createForm.value)
             .subscribe(function () {
             _this.router.navigate(['/users']);

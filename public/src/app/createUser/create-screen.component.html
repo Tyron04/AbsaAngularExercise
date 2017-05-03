@@ -5,23 +5,23 @@
 
     <form [formGroup]="createForm" (ngSubmit)="createForm.valid && create()">
         <div class="panel-body">
-            <div class="form-group" [ngClass]="{'has-error':!createForm.controls['name'].valid && createForm.controls['name'].touched}">
+            <div class="form-group" [ngClass]="{'has-error':!createForm.controls['Name'].valid && createForm.controls['Name'].touched}">
                 <label>Name:</label>
-                <input class="form-control" formControlName="name" placeholder="John">
-                <div *ngIf="createForm.controls['name'].hasError('required') && createForm.controls['name'].touched" class="alert alert-danger">Name is required</div>
+                <input class="form-control" formControlName="Name" placeholder="John">
+                <div *ngIf="createForm.controls['Name'].hasError('required') && createForm.controls['Name'].touched" class="alert alert-danger">Name is required</div>
             </div>
-            <div class="form-group" [ngClass]="{'has-error':!createForm.controls['surname'].valid && createForm.controls['surname'].touched}">
+            <div class="form-group" [ngClass]="{'has-error':!createForm.controls['Surname'].valid && createForm.controls['Surname'].touched}">
                 <label>Surname:</label>
-                <input class="form-control" formControlName="surname" placeholder="Smith">
-                <div *ngIf="createForm.controls['surname'].hasError('required') && createForm.controls['surname'].touched" class="alert alert-danger">Surname is required</div>
+                <input class="form-control" formControlName="Surname" placeholder="Smith">
+                <div *ngIf="createForm.controls['Surname'].hasError('required') && createForm.controls['Surname'].touched" class="alert alert-danger">Surname is required</div>
             </div>
-            <div class="form-group" [ngClass]="{'has-error':!createForm.controls['country'].valid && createForm.controls['country'].touched}">
+            <div class="form-group" [ngClass]="{'has-error':!createForm.controls['Country'].valid && createForm.controls['Country'].touched}">
                 <label>Country:</label>
-                <select class="form-control" formControlName="country">
+                <select class="form-control" formControlName="Country">
                     <option value="">--Select Country--</option>
                     <option *ngFor="let country of countries" value="{{country.Name}}">{{country.Name}}</option>
                 </select>
-                <div *ngIf="createForm.controls['country'].hasError('required') && createForm.controls['country'].touched" class="alert alert-danger">Country is required</div>
+                <div *ngIf="createForm.controls['Country'].hasError('required') && createForm.controls['Country'].touched" class="alert alert-danger">Country is required</div>
             </div>
         </div>
         <div class="panel-footer">

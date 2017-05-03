@@ -5,7 +5,7 @@ import { User } from '../models/user/user';
 @Component({
     selector: 'view-users',
     templateUrl: './view-screen.component.html',
-    styleUrls:['./view-screen.component.css']
+    styleUrls: ['./view-screen.component.css']
 })
 
 export class ViewScreenComponent implements OnInit {

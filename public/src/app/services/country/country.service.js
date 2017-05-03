@@ -23,10 +23,6 @@ var CountryService = (function () {
             .map(function (response) { return response.json(); });
     };
     ;
-    CountryService.prototype.handleError = function (error) {
-        console.error('An error occurred while performing country operations', error);
-        return Promise.reject(error.message || error);
-    };
     return CountryService;
 }());
 CountryService = __decorate([

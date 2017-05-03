@@ -6,7 +6,7 @@ import { LoginComponent } from '../login/login.component';
 import { CreateScreenComponent } from '../createUser/create-screen.component';
 import { ViewScreenComponent } from '../viewUser/view-screen.component';
 import { EditScreenComponent } from '../editUser/edit-screen.component';
-import { FunParentComponent } from '../fun/fun-parent.component'
+import { FunParentComponent } from '../fun/fun-parent.component';
 
 const routes: Routes = [
     {

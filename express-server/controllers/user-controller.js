@@ -33,9 +33,9 @@ router.post('/', function(req, res, next) {
 
         var user = new User({
             _id: id,
-            Name: req.body.name,
-            Surname: req.body.surname,
-            Country: req.body.country
+            Name: req.body.Name,
+            Surname: req.body.Surname,
+            Country: req.body.Country
         })
 
         user.save(function(err) {
@@ -58,9 +58,9 @@ router.put('/:id', function(req, res, next) {
     var id = req.params.id
     var user = new User({
         _id: id,
-        Name: req.body.name,
-        Surname: req.body.surname,
-        Country: req.body.country
+        Name: req.body.Name,
+        Surname: req.body.Surname,
+        Country: req.body.Country
     })
     User.findByIdAndUpdate(id, user, function(err, updatedUser) {
         if (err)

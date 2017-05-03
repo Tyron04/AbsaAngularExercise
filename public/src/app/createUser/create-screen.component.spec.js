@@ -29,13 +29,11 @@ var firstname = 'Tyron';
 var surname = 'Surajpal';
 var country = countries[0].Name;
 var validUser = {
-    name: firstname,
-    surname: surname,
-    country: country
+    Name: firstname,
+    Surname: surname,
+    Country: country
 };
 var countriesElem;
-var mockAuthHttp;
-var spy;
 var mockRouter = {
     navigate: jasmine.createSpy('navigate')
 };
@@ -75,14 +73,14 @@ describe('create user screen', function () {
             fixture.whenStable().then(function () {
                 comp.ngOnInit();
                 fixture.detectChanges();
-                expect(countriesElem.children.length).toBe(4); //Add one more for the "--Select Country--" option
+                expect(countriesElem.children.length).toBe(4); // Add one more for the "--Select Country--" option
             });
         })));
     });
     function populateForm(firstName, surname, country) {
-        comp.createForm.controls['name'].setValue(firstName);
-        comp.createForm.controls['surname'].setValue(surname);
-        comp.createForm.controls['country'].setValue(country);
+        comp.createForm.controls['Name'].setValue(firstName);
+        comp.createForm.controls['Surname'].setValue(surname);
+        comp.createForm.controls['Country'].setValue(country);
     }
     describe('populated values', function () {
         it('should update from the form', testing_1.async(testing_1.inject([testing_2.MockBackend], function (mockBackend) {
