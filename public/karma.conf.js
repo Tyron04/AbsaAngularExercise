@@ -1,3 +1,5 @@
+var webpackConfig = require('./webpack.test');
+
 module.exports = function(config) {
 
     var appBase = 'src/'; // transpiled app JS and map files
@@ -95,7 +97,15 @@ module.exports = function(config) {
         },
 
         exclude: [],
-        preprocessors: {},
+        preprocessors: { './config/karma-test-shim.js': ['webpack', 'sourcemap'] },
+        webpack: webpackConfig,
+        webpackMiddleware: {
+            stats: 'errors-only'
+        },
+
+        webpackServer: {
+            noInfo: true
+        },
         reporters: ['progress', 'kjhtml'],
 
         port: 9876,
